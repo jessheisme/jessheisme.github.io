@@ -22,7 +22,7 @@ a:visited {
 	position: absolute;
 	width: 364px;
 	margin-left: 100px;
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 #heading {
@@ -46,7 +46,8 @@ a:visited {
 	width: 100px;
 	background: #f5cd17;
 	cursor: hand;
-	top: 30px;
+	top: 20px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 1);
 }
 
 #enter-button {
