@@ -1,0 +1,114 @@
+body {
+	font-family: "Oswald", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+	margin: 0px;
+	margin: 0px;
+}
+
+#background {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#black-overlay {
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: rgba(0,0,0,0.6);
+}
+
+#background-img {
+	z-index: -1;
+	position: fixed;
+	width: 100%;
+	height:100%;
+}
+
+#about-container {
+	top: 250px;
+	z-index: 2;
+	position: absolute;
+	width: 100%
+}
+
+
+#about {
+	color: white;
+	position: relative;
+	font-size: 120px;
+	padding-left: 40px;
+	text-align: left;
+	letter-spacing: 10px;
+}
+
+#the-city {
+	position: relative;
+	top: 80px;
+	letter-spacing: 10px;
+	text-align: center;
+	color: white;
+	z-index: 4;
+	font-size: 80px;
+}
+
+#description-container {
+	position: relative;
+	background: black;
+	height: 100%;
+	text-align: center;
+}
+
+#description {
+	z-index: 3;
+	line-height: 1.5;
+	font-family: Open Sans;
+	font-size: 18px;
+	font-weight: 100;
+	position: absolute;
+	color: white;
+	top: 250px;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+#skyline {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	left: 0px;
+}
+
+#me-container {
+	position: relative;
+	background: #191818;
+	height: 100%;
+	width: 100%
+}
+
+#creator {
+	letter-spacing: 10px;
+	position: relative;
+	text-align: center;
+	color: white;
+	font-size: 80px;
+	top: 100px;
+}
+
+#me {
+	position: absolute;
+	bottom: 50%;
+	left: 25%;
+	width: 50%;
+}
+
+#jess {
+	letter-spacing: 10px;
+	position: relative;
+	text-align: center;
+	color: white;
+	font-size: 60px;
+	bottom: 10%;
+	left: calc(50%-180.5px);
+}
+
+

@@ -55,6 +55,13 @@ a:visited {
 	font-size: 28px;
 }
 
+#city {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+}
+
 /* MAP PAGE STYLE */
 
 #map-container {
@@ -73,6 +80,7 @@ a:visited {
 	opacity: 0.5;
 }
 */
+
 
 #map {
 	position: absolute;
@@ -122,19 +130,23 @@ a:visited {
 	height: 32.190179%;
 }
 
-#city {
-	position: absolute;
-	z-index: -1;
-	width: 100%;
-	height: 100%;
+
+#welcome-text {
+	position: fixed;
+	color: #f5cd17;
+	font-size: 56px;
+	line-height: 1;
+	top: 200px;
+	left: 150px;
 }
+
 
 #city-info-container {
 	position: relative;
 	width: 50%;
 	height: 50%;
-	left: 12%;
-	top: 18%;
+	top: 175px;
+	left: 150px;
 	text-align: left;
 	line-height: 1;
 	opacity: 0;
@@ -156,7 +168,7 @@ a:visited {
 
 #city-info-stats-container {
 	position: relative;
-	left: 10%;
+	left: 50px;
 }
 
 .city-info-stats {
@@ -182,12 +194,13 @@ a:visited {
 	position: relative;
 	text-align: right;
 	position: fixed;
-	bottom: 120px;
+	bottom: 150px;
 	width: 300px;
 	height: 100px;
 }
 
 .menu-item {
+	font-weight: 300;
 	font-size: 20px;
 	margin: 15px 0px;
 	padding: 5px 10px;
@@ -196,11 +209,11 @@ a:visited {
 }
 
 #about-city {
-	width: 38%;
+	width: 34%;
 }
 
 #about-president {
-	width: 52%;
+	width: 46%;
 }
 #about-city:hover {
 	cursor: hand;
