@@ -4,6 +4,14 @@ body {
 	margin: 0px;
 }
 
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
 #background {
 	position: relative;
 	width: 100%;
@@ -113,11 +121,12 @@ body {
 }
 
 #back {
+	z-index: 100;
 	position: fixed;
 	right: 0px;
 	bottom: 0px;
 	color: black;
-	background: white;
+	background: rgba(155,155,155,0.9);
 	font-size: 24px;
 	padding: 5px;
 }
