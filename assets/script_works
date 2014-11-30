@@ -34,10 +34,6 @@ $(document).ready(function() {
 		$("#city-info-container").stop().animate({opacity: 1}, 500);
 		$("#vancouver-info-container").stop().animate({opacity: 1}, 500);
 	})
-
-	$("#vancouver-map").click(function() {
-		window.location.href="";
-	})
 	
 	$("#ny-map").hover(function() {
 
@@ -57,7 +53,9 @@ $(document).ready(function() {
 		//show description
 		$("#city-info-container").stop().animate({opacity: 1}, 500);
 		$("#ny-info-container").stop().animate({opacity: 1}, 500);
+
 	})
+
 
 	$("#sf-map").hover(function() {
 
@@ -107,10 +105,6 @@ $(document).ready(function() {
 		$("#toronto-map").stop().css("opacity", "0");
 
 		$("#city-info-container").stop().css("opacity", "0");
-	})
-
-	$("#about-city").hover(function() {
-		$("#menu-contianer").css("left", "-50px");
 	})
 
 })
