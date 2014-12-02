@@ -31,7 +31,6 @@ $(document).ready(function() {
 
 		//show current map
 		$("#vancouver-map").stop().animate({opacity: 1}, 500);
-		$("#vancouver-map").stop().css("opacity", 1);
 
 		//show description
 		$("#city-info-container").stop().animate({opacity: 1}, 500);
