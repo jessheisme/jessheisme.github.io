@@ -12,6 +12,56 @@ $(document).ready(function() {
 	})
 	*/
 
+	// HOME PAGE SCRIPT//
+
+	/*
+	$("#city1").fadeIn("slow", function() {
+		$("#city2").fadeIn("slow", function() {
+		})
+	}
+	*/
+
+
+	/*
+	$("#city1").animate({opacity: 1}, 600, function() {
+		$("#city2").delay(1500).animate({opacity: 1}, 600), function() {
+			$("#city1").css("opacity", "0"), function() {;
+				$("#city1").animate({opacity: 1}, 600);
+			}
+		} 
+	});
+	*/
+
+		$(".city").css("opacity", "0");
+		$("#city1").css("opacity", "1");
+		setTimeout(function () {
+			$("#city2").css("opacity", "1");
+		}, 3000)
+		setTimeout(function () {
+			$("#city3").css("opacity", "1");
+		}, 6000)
+		setTimeout(function () {
+			$("#city4").css("opacity", "1");
+		}, 9000)
+
+	setInterval(function () {
+		$(".city").css("opacity", "0");
+		$("#city1").css("opacity", "1");
+		setTimeout(function () {
+			$("#city2").css("opacity", "1");
+		}, 3000)
+		setTimeout(function () {
+			$("#city3").css("opacity", "1");
+		}, 6000)
+		setTimeout(function () {
+			$("#city4").css("opacity", "1");
+		}, 9000)
+	}, 12000)
+	
+	
+
+
+	// END HOME PAGE SCRIPT//
 
 	/* make code better make a class for each individual map and do a all but kinda thing*/
 	$("#vancouver-map").hover(function() {
