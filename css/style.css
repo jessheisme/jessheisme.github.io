@@ -28,7 +28,17 @@ body {
 	-webkit-box-shadow: 0px 13px 30px 0px rgba(0,0,0,0.1);
 }
 
-.topbar-item {
+#topbar-left {
+	float: left;
+}
+
+#topbar-right {
+	position: absolute;
+	right: 15px;
+	float: right;
+}
+
+.topbar-text {
 	font-family: Helvetica;
 	position: relative;
 	top: -6px;
@@ -37,11 +47,21 @@ body {
 	margin-right: 15px;
 }
 
-.topbar-item:nth-child(2) {
+.topbar-text:nth-child(2) {
 	font-weight: 600;
 }
 
+.topbar-icon {
+	height: 63%;
+	margin: 4px 5px;
+}
+
 #apple-logo {
-	height: 16px;
-	margin: 4px 20px;
+	margin: 4px 15px;
+}
+
+#username {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-weight: 600;
 }

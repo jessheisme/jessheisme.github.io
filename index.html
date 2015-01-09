@@ -1,22 +1,36 @@
 <html>
 <head>
 <title>jessheisme</title>
-<link rel="stylesheet" type="text/css" href="Stylesheets/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="shortcut icon" href="img/favicon4.png"/>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="script/date-and-time.js"></script>
 </head>
 
 <body>
 	<div id="background">
-		<img id="logo" src="Images/logo.png"/>
+		<img id="logo" src="img/logo.png"/>
 	</div>
 	<div id="topbar">
-		<img id="apple-logo" src="Images/apple_logo.png"/>
-		<div class="topbar-item">Home</div>
-		<div class="topbar-item">File</div>
-		<div class="topbar-item">Edit</div>
-		<div class="topbar-item">View</div>
-		<div class="topbar-item">Go</div>
-		<div class="topbar-item">Window</div>
-		<div class="topbar-item">Help</div>
+		<div id="topbar-left">
+			<img class="topbar-icon" id="apple-logo" src="img/apple_logo.png"/>
+			<div class="topbar-text">Home</div>
+			<div class="topbar-text">File</div>
+			<div class="topbar-text">Edit</div>
+			<div class="topbar-text">View</div>
+			<div class="topbar-text">Go</div>
+			<div class="topbar-text">Window</div>
+			<div class="topbar-text">Help</div>
+		</div>
+		<div id="topbar-right">
+			<img class="topbar-icon" id="wifi" src="img/wifi.png">
+			<img class="topbar-icon" id="volume" src="img/volume.png">
+			<img class="topbar-icon" id="battery" src="img/battery.png">
+			<div class="topbar-text" id="time"></div>
+			<div class="topbar-text" id="username">Jessica He</div>
+			<img class="topbar-icon" id="search" src="img/search.png">
+			<img class="topbar-icon" id="notifcation" src="img/notification_icon.png">
+		</div>
 	</div>
 </body>
 
