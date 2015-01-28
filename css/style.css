@@ -1,0 +1,385 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#background {
+	width: 100%;
+	height: 100%;
+	background-color: #FDF0CE;
+}
+
+#logo {
+	position: absolute;
+	width: 200px;
+	margin: 0px;
+	left: calc(50% - 100px);
+	top: calc(50% - 118px/2);
+}
+
+#topbar {
+	font-family: Helvetica;
+	margin: 0px;
+	top: 0px;
+	position: fixed;
+	height: 24px;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.75);
+	-webkit-box-shadow: 0px 13px 30px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 13px 30px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 13px 30px 0px rgba(0,0,0,0.1);
+	z-index: 20;
+}
+
+#topbar-left {
+	position: absolute;
+	left: 10px;
+}
+
+#topbar-right {
+	position: absolute;
+	right: 15px;
+	float: right;
+}
+
+.topbar-text {
+	position: relative;
+	top: -6px;
+	font-size: 14px;
+	display: inline;
+	margin-right: 15px;
+}
+
+.topbar-text-stay {
+	position: relative;
+	top: -6px;
+	font-size: 14px;
+	display: inline;
+	margin-right: 15px;
+}
+
+#topbar-title {
+	font-weight: 600;
+	top: -6px;
+}
+
+.topbar-icon {
+	height: 63%;
+	margin: 4px 5px;
+}
+
+.topbar-icon-hide {
+	height: 63%;
+	margin: 4px 5px;
+}
+
+
+#apple-logo {
+	opacity: 1 !important;
+	padding: 4.5px 10.5px;
+	margin: 0px 4px;
+	-webkit-filter: invert(0%);
+	background-color: none;
+}
+
+#apple-logo:hover {
+	cursor: hand;
+}
+
+#username {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-weight: 600;
+}
+
+#time {
+	margin-left: 5px;
+	margin-right: 0px;
+}
+
+#dock-hover-area {
+	z-index: 21;
+	position: absolute;
+	bottom: 0px;
+	height: 70px;
+	width: 100%;
+}
+
+#dock {
+	position: absolute;
+	bottom: -60px;
+	height: 55px;
+	margin-left: calc(50% - 288px/2);
+	box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.1);
+	background-color: rgba(255, 254, 249, 0.75);
+	border-radius: 5px;
+	-moz-border-raius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#dock-title-container {
+	display: block;
+	position: fixed;
+	bottom: 80px;
+	width: 100%;
+}
+
+.dock-title {
+	position: relative;
+	display: inline-block;
+	padding: 5px;
+	left: calc(50% - 288px/2);
+}
+
+/*
+.dock-title {
+	display: none;
+	position: relative;
+	padding: 0px;
+	background: rgba(240, 240, 240, 1);	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.3);
+
+	font-family: Helvetica;
+	font-weight: 300;
+	font-size: 13px;
+	padding: 6px 15px;
+}
+
+.dock-title:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	background-color: #f0f0f0;
+	border-color: #f0f0f0 transparent;
+	box-sizing: border-box;
+	box-shadow: -3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+	transform-origin: 0 0;
+    transform: rotate(-45deg);
+	display: block;
+	width: 10px;
+	height:10px;
+	z-index: 1;
+	bottom: -10px;
+	left: 35px;
+}
+*/
+
+.app-icon {
+	position: relative;
+	display: inline;
+	height: 45px;
+	margin: 5px;
+}
+
+#dropdown-menu {
+	font-family: Helvetica;
+	display: none;
+	z-index: 15;
+	-moz-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2);
+	width: 225px;
+	position: absolute;
+	left: 15px;
+	top: 24px;
+	background-color: rgba(247, 242, 239, 0.99);
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px; 
+}
+
+.menu-item {
+	width: 185px;
+	margin: 4px 0px;
+	padding: 2px 20px;
+	font-size: 14px;
+}
+
+/*
+#first-menu-item {
+	margin-top: 0px;
+}
+*/
+
+.menu-item:hover {
+	-webkit-filter: invert(100%);
+	background-color: #e59425;
+	cursor: hand;
+}
+
+hr {
+	border: 1px solid #e5e0de;
+	opacity: 0.9;
+}
+
+.window {
+	overflow-y: scroll;
+	overflow-x: hidden; 
+	position: absolute;
+	width: 95%;
+	left: 2.5%;
+	height: 85%;
+	top: 65px;
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 34px 10px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 34px 10px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 34px 10px rgba(0,0,0,0.2);
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px; 
+}
+
+.window-bar {
+	z-index: 10;
+	position: fixed;
+	top: 40px;
+	height: 25px;
+	width: 95%;
+	background-color: #dfdfdf;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 8px 8px 0px 0px;
+	border-radius: 8px 8px 0px 0px; 
+}
+
+.window-options {
+	z-index: 11;
+	position: relative;
+	top: 6px;
+	left: 15px;
+	height: 13px;
+}
+.close {
+	z-index: 12;
+	position: absolute;
+	top: 6px;
+	left: 15px;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+}
+
+.close:hover {
+	cursor: hand;
+}
+
+.window-content {
+	z-index: 9;
+	position: absolute;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+
+#about-me-window {
+	display: none;
+}
+
+#about-me-content {
+}
+
+#about-me-left-content {
+	float: left;
+	position: absolute;
+	width: 180px;
+	top: calc(50% - 325px/2);
+	margin-left: 15%;
+	margin-right: 100px;
+}
+
+#about-me-pic {
+	left: 0px;
+	border-radius: 50%;
+	width: 180px;
+}
+
+#about-me-name {
+	margin-top: 25px;
+	width: 180px;
+	font-size: 2em;
+	font-weight: 700;
+}
+
+#about-me-description {
+	margin-right: 13px;
+	text-align: right;
+	line-height: 0;
+	font-size: 1em;
+	font-weight: 400;
+}
+
+#about-me-right-content {
+	font-weight: 300;
+	position: absolute;
+	right: 15%;
+	top: calc(50% - 249px/2);
+	width: 350px;
+}
+
+#about-me-pic-right {
+	padding-bottom: 20px;
+	border-radius: 50%;
+	width: 180px;
+	display: none;
+}
+
+#about-me-right-content b {
+	font-weight: 400;
+}
+
+#about-me-logo {
+	margin-top: 30px;
+	width: 100px;
+}
+
+#change-bg-window {
+	display: none;
+}
+
+.bg-image {
+	position: relative;
+	width: 200px;
+	height: 133px;
+	margin: 20px;
+}
+
+.bg-image:hover {
+	cursor: hand;
+}
+
+#bg-replaced {
+	position: relative;
+	/*
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	*/
+	width: 100%;
+	height: 100%;
+}
+
+#projects-window {
+	display: none;
+}
+
+
+
