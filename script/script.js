@@ -28,6 +28,29 @@ $(document).ready(function() {
 		$(".topbar-icon").css("opacity", "1");;
 	}
 
+	/*TEMPORARY STUFF*/
+
+	$("#newsanvanronto").mouseenter(function() {
+		$("#newsanvanronto-description").css("display", "block");
+	})
+	$("#newsanvanronto").mouseleave(function() {
+		$("#newsanvanronto-description").css("display", "none");
+	})
+
+	$("#quak").mouseenter(function() {
+		$("#quak-description").css("display", "block");
+	})
+	$("#quak").mouseleave(function() {
+		$("#quak-description").css("display", "none");
+	})
+
+	$("#cmyk").mouseenter(function() {
+		$("#cmyk-description").css("display", "block");
+	})
+	$("#cmyk").mouseleave(function() {
+		$("#cmyk-description").css("display", "none");
+	})
+
 	/*
 	// About Me Responsive
 	window.onresize = function() {
@@ -109,10 +132,10 @@ $(document).ready(function() {
 		$("#background").html("<img id='bg-replaced' src='img/cotton-candy.jpg'/>");
 	})
 	$("#bg2").click(function() {
-		$("#background").html("<img id='bg-replaced' src='img/beach.jpg'/>");
+		$("#background").html("<img id='bg-replaced' src='img/dreamcatcher.jpg'/>");
 	})
 	$("#bg3").click(function() {
-		$("#background").html("<img id='bg-replaced' src='img/graffiti.jpg'/>");
+		$("#background").html("<img id='bg-replaced' src='img/plain.jpg'/>");
 	})
 
 	$("#projects").click(function() {

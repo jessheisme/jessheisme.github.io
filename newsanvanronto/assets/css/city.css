@@ -1,0 +1,147 @@
+body {
+	font-family: "Oswald", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+	margin: 0px;
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+#background {
+	overflow-x: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#black-overlay {
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: rgba(35,31,32,0.65);
+}
+
+#background-img {
+	z-index: -1;
+	position: fixed;
+	width: 100%;
+	height:100%;
+}
+
+#about-container {
+	top: 250px;
+	z-index: 2;
+	position: absolute;
+	width: 100%
+}
+
+
+#about {
+	color: #f5cd17;
+	position: relative;
+	font-size: 120px;
+	padding-left: 40px;
+	text-align: left;
+	letter-spacing: 10px;
+}
+
+#the-city {
+	position: relative;
+	top: 80px;
+	letter-spacing: 10px;
+	text-align: center;
+	color: #f5cd17;
+	z-index: 4;
+	font-size: 80px;
+}
+
+
+
+#description-container {
+	position: relative;
+	background: #231f20;
+	height: 100%;
+	text-align: center;
+}
+
+.fixed {
+	position: fixed;
+}
+
+/*#description-container.fixed {
+	display: block;
+	position: fixed;
+	top: 0px;
+	height: 100%;
+}
+*/
+
+#description {
+	z-index: 3;
+	line-height: 1.5;
+	font-family: Open Sans;
+	font-size: 18px;
+	font-weight: 100;
+	position: absolute;
+	color: white;
+	top: 250px;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+#skyline {
+	z-index: 50;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	left: 0px;
+}
+
+#me-container {
+	position: relative;
+	background: #191818;
+	height: 100%;
+	width: 100%
+}
+
+#jess {
+	letter-spacing: 10px;
+	position: relative;
+	text-align: center;
+	color: #f5cd17;
+	font-size: 60px;
+	top: 600px;
+	left: 20px;
+}
+
+#me {
+	position: absolute;
+	bottom: 50px;
+	left: 25%;
+	width: 50%;
+}
+
+#creator {
+	letter-spacing: 10px;
+	position: relative;
+	text-align: center;
+	color: #f5cd17;
+	font-size: 80px;
+	left: calc(50%-180.5px);
+}
+
+#back {
+	z-index: 100;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	color: black;
+	background: rgba(155,155,155,0.9);
+	font-size: 24px;
+	padding: 5px;
+}
