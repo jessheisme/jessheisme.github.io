@@ -89,3 +89,15 @@ body {
 	top: 215px;
 	left: 85px;
 }
+
+#logo {
+	position: fixed;
+	height: 25px;
+	bottom: 20px;
+	right: 30px;
+	opacity: 0.6;
+}
+
+#logo:hover {
+	opacity: 1;
+}
