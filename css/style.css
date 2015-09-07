@@ -4,7 +4,7 @@ body {
 	margin: 0px;
 	overflow-x: hidden;
 	overflow-y: hidden;
-	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+	font-family: 'Roboto','Source Sans Pro', Helvetica, sans-serif;
 }
 
 a {
@@ -12,20 +12,8 @@ a {
 	color: black;
 }
 
-#background {
-	width: 100%;
-	height: 100%;
-	background-color: #FDF0CE;
-}
 
-#logo {
-	display: none;
-	position: absolute;
-	width: 100px;
-	margin: 0px;
-	left: calc(50% - 50px);
-	top: calc(50% - 118px/2);
-}
+/********** TOPBAR *********/
 
 #topbar {
 	font-family: Helvetica;
@@ -38,7 +26,7 @@ a {
 	-webkit-box-shadow: 0px 13px 30px 0px rgba(0,0,0,0.1);
 	-moz-box-shadow: 0px 13px 30px 0px rgba(0,0,0,0.1);
 	box-shadow: 0px 13px 30px 0px rgba(0,0,0,0.1);
-	z-index: 20;
+	z-index: 200;
 }
 
 #topbar-left {
@@ -107,139 +95,10 @@ a {
 	margin-right: 0px;
 }
 
-#dock-hover-area {
-	z-index: 21;
-	position: absolute;
-	bottom: 0px;
-	height: 70px;
-	width: 100%;
-}
-
-/*TEMPORARY STUFF*/
-
-#temp-container {
-	width: 400px;
-	position: fixed;
-	left: 10%;
-	top: calc(50% - 200px);
-}
-
-#temp-title {
-	text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
-	font-size: 56px;
-	font-weight: 900;
-	line-height: 0.8;
-}
-
-#temp-description {
-	margin-top: 20px;
-	margin-left: 5px;
-	font-weight: 300;
-}
-
-.temp-link {
-	text-decoration: underline;
-	font-weight: 700;
-	top: 20px;
-	font-size: 18px;
-	cursor: hand;
-	line-height: 1.75;
-}
-
-.hover-description {
-	display: none;
-}
-
-#hover-description-container {
-	position: fixed;
-	left: 55%;
-	top: calc(50% - 50px);
-	width: 400px;
-	text-align: center;
-	font-weight: 300;
-}
-
-
-
-/*TEMPORARY STUFF*/
-
-#dock {
-	position: absolute;
-	bottom: -60px;
-	height: 55px;
-	margin-left: calc(50% - 288px/2);
-	box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.1);
-	-moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.1);
-	-webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.1);
-	background-color: rgba(255, 254, 249, 0.75);
-	border-radius: 5px;
-	-moz-border-raius: 5px;
-	-webkit-border-radius: 5px;
-}
-
-#dock-title-container {
-	display: none;
-	position: fixed;
-	bottom: 80px;
-	width: 100%;
-}
-
-.dock-title {
-	position: relative;
-	display: inline-block;
-	padding: 5px;
-	left: calc(50% - 288px/2);
-}
-
-/*
-.dock-title {
-	display: none;
-	position: relative;
-	padding: 0px;
-	background: rgba(240, 240, 240, 1);	
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	-webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.3);
-	-moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.3);
-	box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.3);
-
-	font-family: Helvetica;
-	font-weight: 300;
-	font-size: 13px;
-	padding: 6px 15px;
-}
-
-.dock-title:after {
-	content: '';
-	position: absolute;
-	border-style: solid;
-	background-color: #f0f0f0;
-	border-color: #f0f0f0 transparent;
-	box-sizing: border-box;
-	box-shadow: -3px 3px 5px 0 rgba(0, 0, 0, 0.3);
-	transform-origin: 0 0;
-    transform: rotate(-45deg);
-	display: block;
-	width: 10px;
-	height:10px;
-	z-index: 1;
-	bottom: -10px;
-	left: 35px;
-}
-*/
-
-.app-icon {
-	position: relative;
-	display: inline;
-	height: 45px;
-	margin: 5px;
-}
-
 #dropdown-menu {
 	font-family: Helvetica;
 	display: none;
-	z-index: 15;
+	z-index: 150;
 	-moz-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2);
 	-webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2);
 	box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2);
@@ -260,12 +119,6 @@ a {
 	font-size: 14px;
 }
 
-/*
-#first-menu-item {
-	margin-top: 0px;
-}
-*/
-
 .menu-item:hover {
 	-webkit-filter: invert(100%);
 	background-color: #e59425;
@@ -276,6 +129,146 @@ hr {
 	border: 1px solid #e5e0de;
 	opacity: 0.9;
 }
+
+/******** DOCK STUFF ********/
+
+#dock {
+	position: absolute;
+	top: calc(50% - 185px/2 - 25px);
+	width: 52px;
+	right: 0px;
+	text-align: center;
+	box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.1);
+	background-color: rgba(255, 254, 249, 0.75);
+	border-radius: 5px;
+	-moz-border-raius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 5px;
+}
+
+#dock-hover-area {
+	z-index: 210;
+	position: absolute;
+	top: 25px;
+	right: 0px;
+	height: 100%;
+	width: 160px;
+}
+
+#dock-title-container {
+	position: absolute;
+	top: calc(50% - 185px/2 - 25px);
+	width: 90px;
+}
+
+.dock-title {
+	background: white;
+	padding: 5px 15px;
+	font-size: 0.9em;
+	text-align: center;
+	border-radius: 5px;
+	float: right;
+	background-color: rgba(255, 255, 255, 0.75);
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	opacity: 0;
+	border: 0.5px solid rgb(232, 232, 232);
+}
+
+#about-title {
+	margin-top: 12px;
+}
+
+#projects-title {
+	margin-top: 16px;
+}
+
+#photos-title {
+	margin-top: 16px;
+}
+
+#videos-title {
+	margin-top: 17px;
+}
+
+#links-title {
+	margin-top: 17px;
+}
+
+.dot {
+	background-color: grey;
+	height: 5px;
+	width: 5px;
+	float: left;
+	margin: 19px 0px;
+	margin-left: 2px;
+	border-radius: 50%;
+	opacity: 0;
+}
+
+.app-icon {
+	position: relative;
+	display: inline;
+	width: 40px;
+	margin: 2px;
+	float: left;
+}
+
+/****** BACKGROUND IMAGE *******/
+
+#change-bg-window {
+	display: none;
+}
+
+#background {
+	width: 100%;
+	height: 100%;
+	background-color: #FDF0CE;
+}
+
+.logo {
+	position: absolute;
+	width: 200px;
+	margin: 0 auto;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+}
+
+.bg-image {
+	position: fixed;
+	opacity: 0.8;
+	width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+}
+
+.bg-image:hover {
+	cursor: hand;
+}
+
+#bg-replaced {
+	position: relative;
+	/*
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	*/
+	width: 100%;
+	height: 100%;
+}
+
+/********* GENERIC WINDOW **********/
 
 .window {
 	overflow-y: scroll;
@@ -292,10 +285,11 @@ hr {
 	-moz-border-radius: 0px;
 	-webkit-border-radius: 0px 0px 5px 5px;
 	border-radius: 0px 0px 5px 5px; 
+	display: none;
 }
 
 .window-bar {
-	z-index: 10;
+	z-index: 100;
 	position: fixed;
 	top: 40px;
 	height: 25px;
@@ -307,14 +301,14 @@ hr {
 }
 
 .window-options {
-	z-index: 11;
+	z-index: 110;
 	position: relative;
 	top: 6px;
 	left: 15px;
 	height: 13px;
 }
 .close {
-	z-index: 12;
+	z-index: 120;
 	position: absolute;
 	top: 6px;
 	left: 15px;
@@ -328,14 +322,17 @@ hr {
 }
 
 .window-content {
-	z-index: 9;
+	z-index: 90;
 	position: absolute;
 	text-align: center;
 	height: 100%;
 	width: 100%;
+	background-color: white; 
 }
 
-#about-me-window {
+/******* ABOUT ME WINDOW ********/
+
+#about-window {
 	display: none;
 }
 
@@ -396,40 +393,80 @@ hr {
 	width: 100px;
 }
 
-#change-bg-window {
-	display: none;
-}
-
-.bg-image {
-	position: relative;
-	width: 200px;
-	height: 133px;
-	margin: 20px;
-}
-
-.bg-image:hover {
-	cursor: hand;
-}
-
-#bg-replaced {
-	position: relative;
-	/*
-	background-position: center center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	*/
-	width: 100%;
-	height: 100%;
-}
-
+/***** PROJECT WINDOW ******/
 
 #projects-window {
 	display: none;
 }
 
+#project-thumbnail-container {
+	position: fixed;
+	width: 20%;
+	height: 100%;
+	min-width: 170px;
+	background: rgb(251, 251, 251);
+}
 
+.project-thumbnail {
+	position: relative;
+	width: 80%;
+	margin: 10%;
+	margin-bottom: 0;
+	border: 1px solid #e7e7e7;
+	top: 50%;
+	-webkit-transform: translateY(-250%);
+	transform: translateY(-250%);
+	-moz-transform: translateY(-250%);
+}
 
+.project-thumbnail:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.project-content {
+	position: absolute;
+	width: 80%;
+	right: 0px;
+}
+
+.project-content .text {
+	margin: 10% 20%;
+}
+
+.project-content .title {
+	font-size: 2em;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+
+.project-content .video {
+	position: relative;
+	width: 80%;
+	margin: 20px;
+}
+
+.project-content .description {
+	margin-top: 0px;
+}
+
+#proj2 {
+	display: none;
+}
+
+#proj3 {
+	display: none;
+}
+
+/**** TEMPORARY STUFF ***/
+
+.temp {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	moz-transform: translate(-50%,-50%);
+	font-size: 2em;
+	letter-spacing: 5px;
+}

@@ -4,88 +4,31 @@
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <link rel="shortcut icon" href="img/favicon4.png"/>
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900' rel='stylesheet' type='text/css'>
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="script/date-and-time.js"></script>
-<script src="script/script.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-61646316-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
+
+<!-- BELOW IS EVERYTHING "STANDARD" (TOPBAR, DROPDOWN MENU, DOCK, BACKGROUND) -->
+
 	<div id="background">
-		<img id="logo" src="img/logo.png"/>
-	</div>
-
-	<div id="temp-container">
-		<div id="temp-title">
-		WEBSITE UNDER CONSTRUCTION
-		</div>
-		<div id="temp-description">
-		But in the meantime, feel free to click the links below to see some of my projects and play around the site!
-		<br>
-		<br>
-		<b>Hint</b>: Click the Apple menu for more.
-		<br>
-		<br>
-		<a target = "_blank" href="newsanvanronto/index.html">
-		<div class="temp-link" id="newsanvanronto">NEW SAN VANRONTO</div>
-		</a>
-		<a target = "_blank" href="quak/index.html">
-			<div class="temp-link" id="quak">QUAK (IN PROGRESS)</div>
-		</a>
-		<a target="_blank" href="https://drive.google.com/folderview?id=0B8DzU5_QQR8dLURoNWdtbzRGbkU&usp=sharing">
-			<div class="temp-link" Id="cmyk">CMYK DESIGNATHON MAP REDESIGN</div>
-		</a>
-		</div>
-	</div>
-
-	<div id="hover-description-container">
-		<div class="hover-description" id="newsanvanronto-description">
-			<b>WEBSITE</b>
-			<br>
-			<em>New San Vanronto</em> was my final project for UC Berkeley's Web Design Decal, which I currently help teach.
-			<br>
-			<em>New San Vanronto</em> showcases a conceptual city that I created from four of my favorite cities: New York, San Francisco, Vancouver, and Toronto.
-		</div>
-		<div class="hover-description" id="quak-description">
-			<b>MOBILE APP</b>
-			<br>
-			<em>Quak</em> is a question and answer mobile app concept.
-			<br>
-			This project is still incomplete but click the link to see its progress and check back for updates!
-		</div>
-		<div class="hover-description" id="cmyk-description">
-			<b>PRODUCT DESIGN</b>
-			<br>
-			In Fall 2014, I participated in a design competition in which we were assigned to redesign a traditional map.  This is what my team and I submitted (after only a few hours of work).  We were awarded <em>"Most Creative"</em> and our project was hand picked by a UX Designer from Adobe.
-		</div>
-
+		<img class="logo" src="img/logo2.png">
+		<img class="bg-image" src="img/vancouver.jpg"/>
 	</div>
 
 	<div id="dock-hover-area">
-		<div id="dock">
-			<img class="app-icon" id="finder" src="img/finder.png"/>
-			<img class="app-icon" id="projects" src="img/projects_icon.png"/>
-			<img class="app-icon" id="photo-video" src="img/preview.png"/>
-			<img class="app-icon" id="music" src="img/itunes.png"/>
-			<img class="app-icon" id="resume" src="img/textedit.png"/>
+		<div id="dock-title-container"> 
+			<div class="dock-title" id="about-title">About</div>
+			<div class="dock-title" id="projects-title">Projects</div>
+			<div class="dock-title" id="photos-title">Photos</div>
+			<div class="dock-title" id="videos-title">Videos</div>
 		</div>
-	</div>
-	<div id="dock-title-container">
-		<div class="dock-title" id="finder-title">About Me</div>
-		<div class="dock-title" id="projects-title">Projects</div>
-		<div class="dock-title" id="photo-video-title">Photo/Video</div>
-		<div class="dock-title" id="music-title">Music</div>
-		<div class="dock-title" id="resume-title">Resume</div>
+		<div id="dock">
+			<img class="app-icon" id="about" src="img/finder.png"/> <div class="dot" id="about-dot"></div>
+			<img class="app-icon" id="projects" src="img/terminal.png"/> <div class="dot" id="projects-dot"></div>
+			<img class="app-icon" id="photos" src="img/photoshop.png"/> <div class="dot" id="photos-dot"></div>
+			<img class="app-icon" id="videos" src="img/premiere.png"/> <div class="dot" id="videos-dot"></div>
+		</div>
 	</div>
 
 	<div id="topbar">
@@ -135,9 +78,11 @@
 		<div class="menu-item" id="change-bg">Change Desktop Picture...</div>
 	</div>
 
-	<div class="window" id="about-me-window">
+	<!---BELOW ARE ALL OF THE DIFFERENT WINDOWS -->
+
+	<div class="window" id="about-window">
 		<div class="window-bar">
-			<div class="close"></div>
+			<div class="close" id="about-close"></div>
 			<img class="window-options" src="img/window_options.png">
 		</div>
 		<div class="window-content" id="about-me-content">
@@ -163,9 +108,39 @@
 		</div>
 	</div>
 
+	<div class="window" id="projects-window">
+		<div class="window-bar">
+			<div class="close" id="projects-close"></div>
+			<img class="window-options" src="img/window_options.png">
+		</div>
+		<div class="window-content" id="projects-content">
+			<div class="temp">PROJECTS COMING SOON</div>
+		</div>
+	</div>
+
+	<div class="window" id="photos-window">
+		<div class="window-bar">
+			<div class="close" id="photos-close"></div>
+			<img class="window-options" src="img/window_options.png">
+		</div>
+		<div class="window-content" id="photos-content">
+			<div class="temp">PHOTOS COMING SOON</div>
+		</div>
+	</div>
+
+	<div class="window" id="videos-window">
+		<div class="window-bar">
+			<div class="close" id="videos-close"></div>
+			<img class="window-options" src="img/window_options.png">
+		</div>
+		<div class="window-content" id="videos-content">
+			<div class="temp">VIDEOS COMING SOON</div>
+		</div>
+	</div>
+
 	<div class="window" id="change-bg-window">
 		<div class="window-bar">
-			<div class="close"></div>
+			<div class="close" id="change-bg-close"></div>
 			<img class="window-options" src="img/window_options.png">
 		</div>
 		<div class="window-content" id="change-bg-content">
@@ -175,16 +150,9 @@
 		</div>
 	</div>
 
-	<div class="window" id="projects-window">
-		<div class="window-bar">
-			<div class="close"></div>
-			<img class="window-options" src="img/window_options.png">
-		</div>
-		<div class="window-content" id="projects-content">
-		
-		</div>
-	</div>
-
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="script/date-and-time.js"></script>
+<script src="script/script.js"></script>
 
 </body>
 
