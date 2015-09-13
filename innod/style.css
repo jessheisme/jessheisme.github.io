@@ -101,9 +101,22 @@ a {
 	margin-bottom: 20px;
 }
 
+
+.insta a {
+	padding: 5px;
+	-webkit-transition: .5;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+
 .insta {
 	font-size: 0.8em;
-	margin-top: 5%;
+	margin: 5%;
+}
+
+.insta a:hover {
+	color: #e8b03b;
+	background: white;
 }
 
 
@@ -118,6 +131,7 @@ a {
 	letter-spacing: 2px;
 	display: none;
 }
+
 
 
 

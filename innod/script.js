@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+	$(".fade").hide(0).fadeIn(1500);
+
 	$(".left").hover(function() {
 		$("body").css("backgroundColor","#0293c0");
 		$(".right").css("backgroundColor","#0293c0");
