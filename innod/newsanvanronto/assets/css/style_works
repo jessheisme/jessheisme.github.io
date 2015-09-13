@@ -1,0 +1,180 @@
+body {
+	font-family: "Oswald", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+	margin: 0px;
+	background: #231f20;
+	width: 100%;
+	height: 100%;
+}
+
+/* HOME PAGE STYLE */
+
+a:link {
+	text-decoration: none;
+	color: black;
+}
+
+a:visited {
+	color: black;
+}
+
+#title-container {
+	z-index: 200;
+	position: absolute;
+	width: 364px;
+	margin-left: 100px;
+	margin-top: 100px;
+}
+
+#heading {
+	color: #f5cd17;
+	font-size: 72;
+	line-height: 1;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
+}
+
+#subheading {
+	color: white;
+	font-size: 39px;
+	margin-left: 13px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
+}
+
+#enter-container {
+	position: relative;
+	margin-left: 105;
+	border-radius: 3px;
+	width: 100px;
+	background: #f5cd17;
+	cursor: hand;
+	top: 30px;
+}
+
+#enter-button {
+	position: relative;
+	text-align: center;
+	font-size: 28px;
+}
+
+/* MAP PAGE STYLE */
+
+#map-container {
+	position: relative;
+	/*display: none;*/
+	float: right;
+	width: 65%;
+	height: 85%;
+	top: 30px;
+	right: 30px;
+	/*opacity: 0;*/
+	/*-webkit-transition: all 0.3s;*/
+}
+
+/*.active {
+	opacity: 0.5;
+}
+*/
+
+#map {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#ny-map {
+	cursor: hand;
+	opacity: 0;
+	position: absolute;
+	z-index: 499;
+	bottom: 0px;
+	width: 61.104141%;
+	height: 68.823071%;
+}
+
+#sf-map {
+	cursor: hand;
+	opacity: 0;
+	position: absolute;
+	z-index: 488;
+	right: 0px;
+	bottom: .1%;
+	width: 41.091593%;
+	height: 58.222915%;
+}
+
+#toronto-map {
+	cursor: hand;
+	opacity: 0;
+	position: absolute;
+	z-index: 497;
+	top: 24.886984%;
+	left: 58.946048%;
+	width: 29.3601%;
+	height: 19.875292%;
+}
+
+#vancouver-map {
+	cursor: hand;
+	opacity: 0;
+	position: absolute;
+	z-index: 500;
+	left: 36.7%;
+	width: 18.569636%;
+	height: 32.190179%;
+}
+
+#city {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+}
+
+#city-info-container {
+	position: relative;
+	width: 50%;
+	height: 50%;
+	left: 12%;
+	top: 18%;
+	text-align: left;
+	line-height: 1;
+	opacity: 0;
+}
+
+.city-info-title {
+	color: #f5cd17;
+	font-size: 72px;
+	padding-bottom: 0px;
+}
+
+.city-info-description {
+	color: white;
+	font-family: Open Sans;
+	font-size: 30px;
+	font-style: italic;
+	font-weight: 100;
+}
+
+#city-info-stats-container {
+	position: relative;
+	left: 10%;
+}
+
+.city-info-stats {
+	font-family: Open Sans;
+	text-align: left;
+	line-height: 1.5;
+	color: #f5cd17;
+	font-size: 24px;
+	padding-top: 50px;
+	font-weight: 400;
+}
+
+.one-city-container {
+	opacity: 0;
+	position: absolute;
+}
+
+#vancouver-description {
+	margin-left: 12px;
+}
+
