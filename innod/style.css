@@ -18,10 +18,11 @@ body {
 
 .title {
 	margin: 5% 10%;
+	margin-top: 7%;
 }
 
 .subtitle {
-	font-size: 1.2em;
+	font-size: 1em;
 	position: absolute;
 	top: 45%;
 	padding: 10px;
@@ -32,6 +33,7 @@ body {
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
+	letter-spacing: 2px;
 }
 
 .subtitle:hover {
@@ -43,7 +45,7 @@ body {
 	width: 49%;
 	display: inline-block;
 	height: 40%;
-	margin: 10% 0%;
+	margin: 5% 0%;
 }
 
 .left {
@@ -101,6 +103,7 @@ a {
 
 .insta {
 	font-size: 0.8em;
+	margin-top: 5%;
 }
 
 
@@ -115,6 +118,7 @@ a {
 	letter-spacing: 2px;
 	display: none;
 }
+
 
 
 
