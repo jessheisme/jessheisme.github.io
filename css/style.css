@@ -134,8 +134,9 @@ hr {
 
 #dock {
 	position: absolute;
-	top: calc(50% - 185px/2 - 25px);
+	top: calc(50% - 220px/2 - 25px);
 	width: 52px;
+	height:220px;
 	right: 0px;
 	text-align: center;
 	box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.1);
@@ -159,7 +160,7 @@ hr {
 
 #dock-title-container {
 	position: absolute;
-	top: calc(50% - 185px/2 - 25px);
+	top: calc(50% - 220px/2 - 25px);
 	width: 90px;
 }
 
@@ -241,7 +242,7 @@ hr {
 	-moz-transform: translate(-50%, -50%);
 }
 
-.bg-image {
+#bg-image {
 	position: fixed;
 	opacity: 0.8;
 	width: 100%;
@@ -253,8 +254,16 @@ hr {
 	cursor: hand;
 }
 
+.bg-image {
+	float: left;
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
+	margin: 20px;
+}
+
 #bg-replaced {
-	position: relative;
+	position: fixed;
 	/*
 	background-position: center center;
 	background-attachment: fixed;
@@ -266,6 +275,7 @@ hr {
 	*/
 	width: 100%;
 	height: 100%;
+	object-fit: cover;
 }
 
 /********* GENERIC WINDOW **********/
@@ -282,7 +292,7 @@ hr {
 	-webkit-box-shadow: 0px 0px 34px 10px rgba(0,0,0,0.2);
 	-moz-box-shadow: 0px 0px 34px 10px rgba(0,0,0,0.2);
 	box-shadow: 0px 0px 34px 10px rgba(0,0,0,0.2);
-	-moz-border-radius: 0px;
+	-moz-border-radius: 0px 0px 5px 5px;
 	-webkit-border-radius: 0px 0px 5px 5px;
 	border-radius: 0px 0px 5px 5px; 
 	display: none;
@@ -328,6 +338,7 @@ hr {
 	height: 100%;
 	width: 100%;
 	background-color: white; 
+	border-radius: 5px;
 }
 
 /******* ABOUT ME WINDOW ********/
@@ -399,24 +410,64 @@ hr {
 	display: none;
 }
 
+/* bottom version
+#project-thumbnail-container {
+	position: fixed;
+	width: 100%;
+	height: 20%;
+	background: rgb(251, 251, 251);
+	opacity: 0.95;
+	z-index: 2;
+	box-shadow: -1px 0px 15px grey;
+	top: calc(85% + 50px); /*peek
+	left: 0px;
+	transition: 0.5s;
+	-webkit-transition-timing-function: ease-in-out;
+}
+*/
+
+#projects-content {
+	width: 100%;
+}
+
 #project-thumbnail-container {
 	position: fixed;
 	width: 20%;
 	height: 100%;
-	min-width: 170px;
 	background: rgb(251, 251, 251);
+	z-index: 2;
+	transition: 0.5s;
+	-webkit-transition-timing-function: ease-in-out;
+	float: left;
+	margin-left: -20%;
+}
+
+#project-thumbnail-container:hover {
+	margin-left: 0px;
+}
+
+#projects-menu-icon {
+	position: fixed;
+	left: 20px;
+	width: 30px;
+	margin: 25px;
+	z-index: 3;
+	transition: 0.5s;
+	-webkit-transition-timing-function: ease-in-out;
+}
+
+
+#projects-menu-icon:hover {
+	cursor: pointer;
 }
 
 .project-thumbnail {
 	position: relative;
 	width: 80%;
-	margin: 10%;
-	margin-bottom: 0;
 	border: 1px solid #e7e7e7;
-	top: 50%;
-	-webkit-transform: translateY(-250%);
-	transform: translateY(-250%);
-	-moz-transform: translateY(-250%);
+	margin: 10%;
+	display: block;
+	top: 50px;
 }
 
 .project-thumbnail:hover {
@@ -425,29 +476,55 @@ hr {
 }
 
 .project-content {
-	position: absolute;
-	width: 80%;
-	right: 0px;
+	transition: 0.5s;
+	-webkit-transition-timing-function: ease-in-out;
+	position: relative;
+	margin-left: 0%;
+	width: 100%;
+	background: rgb(173, 177, 185);
+}
+
+.project-content .video-container {
 }
 
 .project-content .text {
-	margin: 10% 20%;
+
+	color: white;
+
+}
+
+.project-content .link {
+	display: none;
 }
 
 .project-content .title {
-	font-size: 2em;
+	position: relative;
+	font-size: 4em;
 	text-transform: uppercase;
-	margin-bottom: 0px;
+	font-weight: 700;
+	letter-spacing: 5px;
+	padding: 50px;
 }
 
 .project-content .video {
 	position: relative;
-	width: 80%;
-	margin: 20px;
+	width: 60%;
+	display: block;
+	margin: 0 auto;
+	box-shadow: 1px 1px 15px grey;
+	background: white;
 }
 
 .project-content .description {
-	margin-top: 0px;
+	position: relative;
+	width: 50%;
+	margin: 0 auto;
+	padding: 50px;
+	line-height: 1.5;
+}
+
+#proj1 {
+	display: block;
 }
 
 #proj2 {
@@ -458,15 +535,22 @@ hr {
 	display: none;
 }
 
-/**** TEMPORARY STUFF ***/
+#proj4 {
+	display: none;
+}
 
-.temp {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%,-50%);
-	transform: translate(-50%,-50%);
-	moz-transform: translate(-50%,-50%);
-	font-size: 2em;
+.live {
+	color: white;
+	text-transform: uppercase;
 	letter-spacing: 5px;
+}
+
+/* TEMPORARY */
+.temp {
+	position: relative;
+	top: 50%;
+	font-size: 3em;
+	font-weight: 500;
+	letter-spacing: 5px;
+	-webkit-transform: translateY(-50%);
 }

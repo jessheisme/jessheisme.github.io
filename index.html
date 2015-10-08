@@ -13,7 +13,7 @@
 
 	<div id="background">
 		<img class="logo" src="img/logo2.png">
-		<img class="bg-image" src="img/vancouver.jpg"/>
+		<img id="bg-image" src="img/vancouver.jpg"/>
 	</div>
 
 	<div id="dock-hover-area">
@@ -22,12 +22,14 @@
 			<div class="dock-title" id="projects-title">Projects</div>
 			<div class="dock-title" id="photos-title">Photos</div>
 			<div class="dock-title" id="videos-title">Videos</div>
+			<div class="dock-title" id="links-title">Links</div>
 		</div>
 		<div id="dock">
 			<img class="app-icon" id="about" src="img/finder.png"/> <div class="dot" id="about-dot"></div>
 			<img class="app-icon" id="projects" src="img/terminal.png"/> <div class="dot" id="projects-dot"></div>
 			<img class="app-icon" id="photos" src="img/photoshop.png"/> <div class="dot" id="photos-dot"></div>
 			<img class="app-icon" id="videos" src="img/premiere.png"/> <div class="dot" id="videos-dot"></div>
+			<img class="app-icon" id="links" src="img/safari.png"/> <div class="dot" id="links-dot"></div>
 		</div>
 	</div>
 
@@ -114,7 +116,53 @@
 			<img class="window-options" src="img/window_options.png">
 		</div>
 		<div class="window-content" id="projects-content">
-			<div class="temp">PROJECTS COMING SOON</div>
+			<img class="menu-icon" id="projects-menu-icon" src="img/hamburger.png">
+			<div id="project-thumbnail-container">
+				<img class="project-thumbnail" id="thumb1" src="img/dressdrizzy.jpg">
+				<img class="project-thumbnail" id="thumb2" src="img/newsanvanronto.jpg">
+				<img class="project-thumbnail" id="thumb3" src="img/wavelngth.png">
+				<img class="project-thumbnail" id="thumb4" src="img/quak.jpg">
+			</div>
+			<div class="project-content" id="proj1">
+				<div class="text title">Dress Drizzy</div>
+					<video class="video" autoplay loop>
+						<source src="img/dressdrizzydemo.mp4" type="video/mp4">
+					</video> 
+				<div class="text description">
+					<a class="live" target="_blank" href="http://www.dressdrizzy.us">Click here to visit the site</a><br><br>
+					Dress Drizzy is a fun web app I created in the middle of the night sometime during my sophomore spring semester.  I was supposed to teach JavaScript basics to my web design decal class and I thought I'd use this to demonstrate some of the cool things you can build with JavaScript.<br><br>For this project, I used Adobe Illustrator's image trace function to create the cartoonish look.  Adobe Photoshop and Zara's men's catalogue were used to create the different outfits.
+				</div>
+			</div>
+			<div class="project-content" id="proj2">
+				<div class="text title">New San Vanronto</div>
+				<!-- REPLACE WITH VIDEO-->
+				<img class="video" src="img/newsanvanronto.jpg">
+				<!-- REPLACE WITH VIDEO-->
+				<div class="text description">
+					<a class="live" target="_blank" href="http://www.jessheisme.com/innod/newsanvanronto/index.html">Click here to visit the site</a><br><br>
+					
+				</div>
+			</div>
+			<div class="project-content" id="proj3">
+				<div class="text title">Wavelngth</div>
+				<!-- REPLACE WITH VIDEO-->
+				<img class="video" src="img/wavelngth.png">
+				<!-- REPLACE WITH VIDEO-->
+				<div class="text description">
+					<a class="live" target="_blank" href="http://www.jessheisme.com/innod/wavelength/index.html">Click here to visit the site</a><br><br>
+					
+				</div>
+			</div>
+			<div class="project-content" id="proj4">
+				<div class="text title">QUAK</div>
+				<!-- REPLACE WITH VIDEO-->
+				<img class="video" src="img/quak.jpg">
+				<!-- REPLACE WITH VIDEO-->
+				<div class="text description">
+					<a class="live" target="_blank" href="http://www.jessheisme.com/innod/quak/index.html">Click here to visit the site</a><br><br>
+					
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -124,7 +172,7 @@
 			<img class="window-options" src="img/window_options.png">
 		</div>
 		<div class="window-content" id="photos-content">
-			<div class="temp">PHOTOS COMING SOON</div>
+		<div class="temp">PHOTOS COMING SOON</div>
 		</div>
 	</div>
 
@@ -134,7 +182,17 @@
 			<img class="window-options" src="img/window_options.png">
 		</div>
 		<div class="window-content" id="videos-content">
-			<div class="temp">VIDEOS COMING SOON</div>
+		<div class="temp">VIDEOS COMING SOON</div>
+		</div>
+	</div>
+
+	<div class="window" id="links-window">
+		<div class="window-bar">
+			<div class="close" id="links-close"></div>
+			<img class="window-options" src="img/window_options.png">
+		</div>
+		<div class="window-content" id="links-content">
+		<div class="temp">LINKS COMING SOON</div>
 		</div>
 	</div>
 
@@ -145,8 +203,8 @@
 		</div>
 		<div class="window-content" id="change-bg-content">
 			<img class="bg-image" id="bg1" src="img/cotton-candy.jpg">
-			<img class="bg-image" id="bg2" src="img/Dreamcatcher.jpg">
-			<img class="bg-image" id="bg3" src="img/plain.jpg">
+			<img class="bg-image" id="bg2" src="img/dreamcatcher.jpg">
+			<img class="bg-image" id="bg3" src="img/forest.jpg">
 		</div>
 	</div>
 

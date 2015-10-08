@@ -124,7 +124,29 @@ $(document).ready(function() {
 		$("#background").html("<img id='bg-replaced' src='img/dreamcatcher.jpg'/>");
 	})
 	$("#bg3").click(function() {
-		$("#background").html("<img id='bg-replaced' src='img/plain.jpg'/>");
+		$("#background").html("<img id='bg-replaced' src='img/forest.jpg'/>");
+	})
+
+	/*PROJECT WINDOW*/
+	var off = true;
+	$("#projects-menu-icon").click(function() {
+		if (off) {
+			$("#projects-menu-icon").css("margin-left", "calc(20% + 30px)");
+			$("#project-thumbnail-container").css("margin-left","0%");
+			$(".project-content").css("margin-left","20%");
+			off = false;
+		} else {
+			$("#projects-menu-icon").css("margin-left", "30px");
+			$("#project-thumbnail-container").css("margin-left","-20%");
+			$(".project-content").css("margin-left","0%");
+			off = true;
+		}
+	})
+
+	$(".project-thumbnail").click(function() {
+		var thumbnail = $(this).attr('id').substring($(this).attr('id').length-1);
+		$(".project-content").hide();
+		$("#proj" + thumbnail).show();
 	})
 
 		/*TEMPORARY STUFF
