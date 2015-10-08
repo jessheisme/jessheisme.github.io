@@ -145,6 +145,11 @@ $(document).ready(function() {
 
 	$(".project-thumbnail").click(function() {
 		var thumbnail = $(this).attr('id').substring($(this).attr('id').length-1);
+		
+		$("#projects-menu-icon").css("margin-left", "30px");
+		$("#project-thumbnail-container").css("margin-left","-20%");
+		$(".project-content").css("margin-left","0%");
+		off = true;
 		$(".project-content").hide();
 		$("#proj" + thumbnail).show();
 	})
