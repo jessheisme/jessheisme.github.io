@@ -121,7 +121,7 @@ $(document).ready(function() {
 		$("#background").html("<img id='bg-replaced' src='img/cotton-candy.jpg'/>");
 	})
 	$("#bg2").click(function() {
-		$("#background").html("<img id='bg-replaced' src='img/dreamcatcher.jpg'/>");
+		$("#background").html("<img id='bg-replaced' src='img/dream.jpg'/>");
 	})
 	$("#bg3").click(function() {
 		$("#background").html("<img id='bg-replaced' src='img/forest.jpg'/>");
