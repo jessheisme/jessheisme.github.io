@@ -407,7 +407,7 @@ hr {
 /***** PROJECT WINDOW ******/
 
 #projects-window {
-	display: none;
+	display: block;
 }
 
 /* bottom version
@@ -428,6 +428,7 @@ hr {
 
 #projects-content {
 	width: 100%;
+	background: rgb(173, 177, 185);
 }
 
 #project-thumbnail-container {
