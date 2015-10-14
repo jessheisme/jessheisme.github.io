@@ -1,16 +1,19 @@
 body {
 	margin: 0px;
+	background-image: url("https://images.unsplash.com/uploads/1412750321034baa5d127/d35c5980?q=80&fm=jpg&s=ced305525d043faec7af3b8231b34dad");
+	background-position: center;
 }
 
 #title {
-	font-family: Lato;
-	font-size: 42px;
+	font-family: 'Bangers';
+	font-size: 8em;
 	text-align: center;
 	margin: 30px;
 	margin-bottom: 20px;
 	text-transform: uppercase;
-	letter-spacing: 10px;
-	font-weight: 300;
+	letter-spacing: 5px;
+	font-weight: 400;
+	color: rgb(254, 255, 252);
 }
 
 #drake-container {
@@ -23,20 +26,19 @@ body {
 
 #selection-container {
 	position: relative;
-	width: 100%;
 	text-align: center;
 	top: 30px;
+	padding: 10px;
 }
 
 .outfit-selection {
 	cursor: pointer;
-	height: 100px;
-	padding: 0px 10px;
-	opacity: 0.6;
+	height: 150px;
+	margin: 10px;
 }
 
 .outfit-selection:hover {
-	opacity: 1;
+	opacity: 0.6;
 }
 
 #head {
