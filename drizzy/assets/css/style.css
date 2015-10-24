@@ -2,10 +2,10 @@ body {
 	margin: 0px;
 	background-image: url("../img/clouds.jpg");
 	background-position: center;
+	font-family: 'Bangers';
 }
 
 #title {
-	font-family: 'Bangers';
 	font-size: 6em;
 	text-align: center;
 	margin: 30px;
@@ -92,14 +92,19 @@ body {
 	left: 85px;
 }
 
-#logo {
-	position: fixed;
-	height: 25px;
-	bottom: 20px;
-	right: 30px;
-	opacity: 0.6;
+#strip-button {
+	position: absolute;
+	right: 250px;
+	bottom: 250px;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	color: rgb(254, 255, 252);
+	background: rgb(255, 84, 94);
+	padding: 10px;
+	letter-spacing: 3px;
+	text-align: center;
 }
 
-#logo:hover {
-	opacity: 1;
+#strip-button:hover {
+	cursor: pointer;
 }

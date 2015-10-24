@@ -12,6 +12,11 @@ $(document).ready(function() {
 		$("#o" + number).show();
 	})
 
+	$("#strip-button").click(function() {
+		$(".outfit").fadeOut();
+		$("#body").fadeIn();
+	})
+
 /* 	
 	This is an alternative way of doing the same thing as above.
 	$("#s1").click(function() {
