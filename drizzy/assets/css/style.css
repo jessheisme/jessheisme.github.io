@@ -99,8 +99,8 @@ body {
 
 #strip-button {
 	position: absolute;
-	right: 250px;
-	bottom: 250px;
+	right: 20%;
+	bottom: 40%;
 	font-size: 1.5em;
 	text-transform: uppercase;
 	color: rgb(254, 255, 252);
