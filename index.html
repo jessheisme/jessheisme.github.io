@@ -1,217 +1,23 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>jessheisme</title>
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
-<link rel="shortcut icon" href="img/favicon4.png"/>
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	 <link rel="stylesheet" href="animate.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Hind:400,300,600,500,700' rel='stylesheet' type='text/css'>
 </head>
-
 <body>
-
-<!-- BELOW IS EVERYTHING "STANDARD" (TOPBAR, DROPDOWN MENU, DOCK, BACKGROUND) -->
-
-	<div id="background">
-		<img class="logo" src="img/logo2.png">
-		<img id="bg-image" src="img/vancouver.jpg"/>
+	<img id="bg" src="temp.jpg">
+	<div class="animated fadeInDown" id="text-container">
+		<img id="logo" src="logo.png">
+		<h1 class="text" >Jessica He</h1>
+		<h2 class="text">Website coming January 2016.</h2>
 	</div>
-
-	<div id="dock-hover-area">
-		<div id="dock-title-container"> 
-			<div class="dock-title" id="about-title">About</div>
-			<div class="dock-title" id="projects-title">Projects</div>
-			<div class="dock-title" id="photos-title">Photos</div>
-			<div class="dock-title" id="videos-title">Videos</div>
-			<div class="dock-title" id="links-title">Links</div>
-		</div>
-		<div id="dock">
-			<img class="app-icon" id="about" src="img/finder.png"/> <div class="dot" id="about-dot"></div>
-			<img class="app-icon" id="projects" src="img/terminal.png"/> <div class="dot" id="projects-dot"></div>
-			<img class="app-icon" id="photos" src="img/photoshop.png"/> <div class="dot" id="photos-dot"></div>
-			<img class="app-icon" id="videos" src="img/premiere.png"/> <div class="dot" id="videos-dot"></div>
-			<img class="app-icon" id="links" src="img/safari.png"/> <div class="dot" id="links-dot"></div>
-		</div>
+	<div class="animated fadeInUp" id="link-container">
+		<a href="https://www.instagram.com/jessheisme/" target="_blank"><img class="icon" id="insta" src="insta.png"></a>
+		<a href="https://www.twitter.com/jessheisme/" target="_blank"><img class="icon" id="twitter" src="twitter.png"></a>
+		<a href="https://www.linkedin.com/in/jessheisme" target="_blank"><img class="icon" id="linkedin" src="linkedin.png"></a>
+		<a href="https://open.spotify.com/user/jessheisme" target="_blank"><img class="icon" id="spotify" src="spotify.png"></a>
+		<a href="https://www.youtube.com/jessheisme" target="_blank"><img class="icon" id="youtube" src="youtube.png"></a>
 	</div>
-
-	<div id="topbar">
-		<div id="topbar-left">
-			<img class="topbar-icon" id="apple-logo" src="img/apple_logo.png"/>
-			<div class="topbar-text-stay" id="topbar-title">Home</div>
-			<div class="topbar-text">File</div>
-			<div class="topbar-text">Edit</div>
-			<div class="topbar-text">View</div>
-			<div class="topbar-text">Go</div>
-			<div class="topbar-text">Window</div>
-			<div class="topbar-text">Help</div>
-		</div>
-		<div id="topbar-right">
-			<img class="topbar-icon" id="wifi" src="img/wifi.png">
-			<img class="topbar-icon" id="volume" src="img/volume.png">
-			<img class="topbar-icon" id="battery" src="img/battery.png">
-			<div class="topbar-text-stay" id="time"></div>
-			<div class="topbar-text-stay" id="username">Jessica He</div>
-			<img class="topbar-icon-hide" id="search" src="img/search.png">
-			<img class="topbar-icon-hide" id="notifcation" src="img/notification_icon.png">
-		</div>
-	</div>
-	<div id="dropdown-menu">
-		<div class="menu-item" id="first-menu-item">About This Person</div>
-		<hr>
-		<a target = "_blank" href="https://www.linkedin.com/in/jessheisme/">
-			<div class="menu-item">LinkedIn</div>
-		</a>
-		<a target = "_blank" href="https://twitter.com/jesshetweets">
-			<div class="menu-item">Twitter</div>
-		</a>
-		<a target = "_blank" href="http://instagram.com/jessheisme">
-			<div class="menu-item">Instagram</div>
-		</a>
-		<a target = "_blank" href="https://www.youtube.com/user/JessHeIsMe">
-			<div class="menu-item">YouTube</div>
-		</a>
-		<hr>
-		<a target = "_blank" href="https://github.com/jessheisme">
-			<div class="menu-item">Github</div>
-		</a>
-		<a target = "_blank" href="https://www.behance.net/jessheisme">
-			<div class="menu-item">Behance</div>
-		</a>
-		<hr>
-		<div class="menu-item" id="change-bg">Change Desktop Picture...</div>
-	</div>
-
-	<!---BELOW ARE ALL OF THE DIFFERENT WINDOWS -->
-
-	<div class="window" id="about-window">
-		<div class="window-bar">
-			<div class="close" id="about-close"></div>
-			<img class="window-options" src="img/window_options.png">
-		</div>
-		<div class="window-content" id="about-me-content">
-			<div id="about-me-left-content">
-				<img id="about-me-pic" src="img/me.jpg">
-				<div id="about-me-name">JESSICA HE</div>
-				<div id="about-me-description">
-					<p>UC BERKELEY 2017</p>
-					<p>DESIGNER</p>
-					<p>CREATOR</p>
-					<p>FOOD-LOVER</p>
-				</div>
-			</div>
-			<div id="about-me-right-content">
-				<img id="about-me-pic-right" src="img/me.jpg">
-				<br>
-				Hey there and welcome to my site!
-				<br>
-				My name is Jessica and I'm a 19-year-old designer/creator/filmmaker/photographer/music-maker/food-lover.  I was born in a small Texas town but I spent most of my life living in Vancouver, Canada.  Now, I've returned to my American roots and I'm kickin' it in the Bay Area as a student at the <em>University of California, Berkeley</em>
-				<br>
-				<img id="about-me-logo" src="img/logo.png">
-			</div>
-		</div>
-	</div>
-
-	<div class="window" id="projects-window">
-		<div class="window-bar">
-			<div class="close" id="projects-close"></div>
-			<img class="window-options" src="img/window_options.png">
-		</div>
-		<div class="window-content" id="projects-content">
-			<img class="menu-icon" id="projects-menu-icon" src="img/hamburger.png">
-			<div id="project-thumbnail-container">
-				<img class="project-thumbnail" id="thumb1" src="img/dressdrizzy.jpg">
-				<img class="project-thumbnail" id="thumb2" src="img/newsanvanronto.jpg">
-				<img class="project-thumbnail" id="thumb3" src="img/wavelngth.png">
-				<img class="project-thumbnail" id="thumb4" src="img/quak.jpg">
-			</div>
-			<div class="project-content" id="proj1">
-				<div class="text title">Dress Drizzy</div>
-					<video class="video" autoplay loop>
-						<source src="img/dressdrizzydemo.mp4" type="video/mp4">
-					</video> 
-				<div class="text description">
-					<a class="live" target="_blank" href="http://www.dressdrizzy.us">Click here to visit the site</a><br><br>
-					Dress Drizzy is a fun web app I created in the middle of the night sometime during my sophomore spring semester.  I was supposed to teach JavaScript basics to my web design decal class and I thought I'd use this to demonstrate some of the cool things you can build with JavaScript.<br><br>For this project, I used Adobe Illustrator's image trace function to create the cartoonish look.  Adobe Photoshop and Zara's men's catalogue were used to create the different outfits.
-				</div>
-			</div>
-			<div class="project-content" id="proj2">
-				<div class="text title">New San Vanronto</div>
-				<!-- REPLACE WITH VIDEO-->
-				<img class="video" src="img/newsanvanronto.jpg">
-				<!-- REPLACE WITH VIDEO-->
-				<div class="text description">
-					<a class="live" target="_blank" href="http://www.jessheisme.com/innod/newsanvanronto/index.html">Click here to visit the site</a><br><br>
-					
-				</div>
-			</div>
-			<div class="project-content" id="proj3">
-				<div class="text title">Wavelngth</div>
-				<!-- REPLACE WITH VIDEO-->
-				<img class="video" src="img/wavelngth.png">
-				<!-- REPLACE WITH VIDEO-->
-				<div class="text description">
-					<a class="live" target="_blank" href="http://www.jessheisme.com/innod/wavelength/index.html">Click here to visit the site</a><br><br>
-					
-				</div>
-			</div>
-			<div class="project-content" id="proj4">
-				<div class="text title">QUAK</div>
-				<!-- REPLACE WITH VIDEO-->
-				<img class="video" src="img/quak.jpg">
-				<!-- REPLACE WITH VIDEO-->
-				<div class="text description">
-					<a class="live" target="_blank" href="http://www.jessheisme.com/innod/quak/index.html">Click here to visit the site</a><br><br>
-					
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="window" id="photos-window">
-		<div class="window-bar">
-			<div class="close" id="photos-close"></div>
-			<img class="window-options" src="img/window_options.png">
-		</div>
-		<div class="window-content" id="photos-content">
-		<div class="temp">PHOTOS COMING SOON</div>
-		</div>
-	</div>
-
-	<div class="window" id="videos-window">
-		<div class="window-bar">
-			<div class="close" id="videos-close"></div>
-			<img class="window-options" src="img/window_options.png">
-		</div>
-		<div class="window-content" id="videos-content">
-		<div class="temp">VIDEOS COMING SOON</div>
-		</div>
-	</div>
-
-	<div class="window" id="links-window">
-		<div class="window-bar">
-			<div class="close" id="links-close"></div>
-			<img class="window-options" src="img/window_options.png">
-		</div>
-		<div class="window-content" id="links-content">
-		<div class="temp">LINKS COMING SOON</div>
-		</div>
-	</div>
-
-	<div class="window" id="change-bg-window">
-		<div class="window-bar">
-			<div class="close" id="change-bg-close"></div>
-			<img class="window-options" src="img/window_options.png">
-		</div>
-		<div class="window-content" id="change-bg-content">
-			<img class="bg-image" id="bg1" src="img/cotton-candy.jpg">
-			<img class="bg-image" id="bg2" src="img/dream.jpg">
-			<img class="bg-image" id="bg3" src="img/forest.jpg">
-		</div>
-	</div>
-
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="script/date-and-time.js"></script>
-<script src="script/script.js"></script>
-
 </body>
-
 </html>

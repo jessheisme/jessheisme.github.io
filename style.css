@@ -1,0 +1,67 @@
+body {
+	margin: 0;
+	font-family: 'Hind', 'Helvetica', 'sans-serif';
+}
+
+#bg {
+	min-width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+}
+
+#logo {
+	width: 70px;
+	display: block;
+	margin: 10px auto;
+}
+
+#text-container {
+	position: absolute;
+	top: 200px;
+	width: 100%;
+}
+
+.text {
+	line-height: 0;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+h1 {
+	font-size: 5.5em;
+	letter-spacing: 2px;
+}
+
+h2 {
+	font-weight: 300;
+}
+
+#link-container {
+	position: absolute;
+	bottom: 40px;
+	width: 100%;
+	text-align: center;
+}
+
+.icon {
+	height: 35px;
+	transition: 0.5s;
+}
+
+.icon:hover {
+	-webkit-transform: translateY(-8px);
+	transform: translateY(-8px);
+	-moz-transform: translateY(-8px);
+}
+
+#text-container {
+  -webkit-animation-duration: 2.7s;
+  -webkit-animation-delay: .7s;
+}
+
+#link-container {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1.5s;
+}
