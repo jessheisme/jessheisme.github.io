@@ -1,24 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Tokyo</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<a href="index.html"><div id="title">Travels</div></a>
-	<img id="logo" src="logo.png">
+	<a href="about.html"><div id="about">About</div></a>
+	<a href="http://www.jessheisme.com" target="_blank"><img id="logo" src="logo.png"></a>
+	<div id="overlay">
+		<img class="button" id="close" src="close.png">
+	</div>
 	<div id="main-container">
 		<div id="city-link-container">
 			<a href="barcelona.html"><div class="city-link" id="city1">Barcelona</div></a>
 			<a href="kyoto.html"><div class="city-link" id="city2">Kyoto</div></a>
 			<a href="montreal.html"><div class="city-link" id="city3">Montreal</div></a>
-			<a href="nyc.html"><div class="city-link" id="city4">New York City</div></a>
+			<a href="nyc.html"><div class="city-link" id="city4" >New York City</div></a>
 			<a href="sf.html"><div class="city-link" id="city5">San Francisco</div></a>
 			<a href="seattle.html"><div class="city-link" id="city6">Seattle</div></a>
 			<a href="tokyo.html"><div class="city-link" id="city7" style="color:white;background:#ef714a;">Tokyo</div></a>
 			<a href="vancouver.html"><div class="city-link" id="city8">Vancouver</div></a>
 		</div>
-		
+		<div id="content-container" class="fadeInUp">
+			<img class="picture" src="tokyo/1.jpeg">
+			<img class="picture" src="tokyo/2.jpeg">
+			<img class="picture" src="tokyo/3.jpeg">
+			<img class="picture" src="tokyo/4.jpeg">
+			<img class="picture instagram" src="tokyo/5.jpeg">
+			<img class="picture instagram" src="tokyo/6.jpeg">
+			<img class="picture instagram" src="tokyo/7.jpeg">
+			<img class="picture instagram" src="tokyo/8.jpeg">
+			<img class="picture instagram" src="tokyo/9.jpeg">
+			<div class="snapchat">
+				<img class="snapchat-img" id="img1" src="snapchat.png">
+				<video class="snapchat-vid" id="vid1" controls>
+					<source src="tokyo/tokyo1.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="snapchat">
+				<img class="snapchat-img" id="img2" src="snapchat.png">
+				<video class="snapchat-vid" id="vid2" controls>
+					<source src="tokyo/tokyo2.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div>
+	</div>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="script.js"></script>
 </body>

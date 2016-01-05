@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Seattle</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<a href="index.html"><div id="title">Travels</div></a>
-	<img id="logo" src="logo.png">
+	<a href="about.html"><div id="about">About</div></a>
+	<a href="http://www.jessheisme.com" target="_blank"><img id="logo" src="logo.png"></a>
+	<div id="overlay">
+		<img class="button" id="close" src="close.png">
+	</div>
 	<div id="main-container">
 		<div id="city-link-container">
 			<a href="barcelona.html"><div class="city-link" id="city1">Barcelona</div></a>
@@ -18,7 +23,13 @@
 			<a href="tokyo.html"><div class="city-link" id="city7">Tokyo</div></a>
 			<a href="vancouver.html"><div class="city-link" id="city8">Vancouver</div></a>
 		</div>
-		
+		<div id="content-container" class="fadeInUp">
+			<img class="picture" src="seattle/1.jpeg">
+			<img class="picture" src="seattle/2.jpeg">
+			<img class="picture" src="seattle/3.jpeg">
+			<img class="picture" src="seattle/4.jpeg">
+		</div>
+	</div>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="script.js"></script>
 </body>
