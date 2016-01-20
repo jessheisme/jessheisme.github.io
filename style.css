@@ -18,7 +18,7 @@ body {
 
 #text-container {
 	position: absolute;
-	top: 200px;
+	top: 180px;
 	width: 100%;
 }
 
@@ -37,6 +37,19 @@ h1 {
 
 h2 {
 	font-weight: 300;
+	font-size: 1em;
+}
+
+p {
+	width: 400px;
+	margin: 50px auto;
+	color: white;
+}
+
+a {
+	color: rgb(252, 255, 218);
+	text-decoration: none;
+	font-weight: 600;
 }
 
 #link-container {
