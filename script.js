@@ -4,7 +4,6 @@ $(document).ready(function() {
 	var current = window.location.pathname.split("/").pop();
 	if (current == "index.html" || window.location.hostname == "wwww.jessheisme.com") {	
 		// once animation finishes on nav
-		alert("hey");
 		$(".nav").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
 			window.location = "work.html";
 		});
