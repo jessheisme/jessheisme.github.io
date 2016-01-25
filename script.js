@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
-	// go to about page after opening animation
+	// go to work page after opening animation
 	var current = window.location.pathname.split("/").pop();
+	alert(window.location.hostname);
 	if (current == "index.html" || window.location.hostname == "wwww.jessheisme.com") {	
 		// once animation finishes on nav
 		$(".nav").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
