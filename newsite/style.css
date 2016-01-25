@@ -1,0 +1,44 @@
+body {
+	background: whitesmoke;
+}
+
+svg {
+	position: relative;
+	display: block;
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 25%;
+}
+
+path {
+	stroke-dasharray: 1200;
+	stroke-dashoffset: 1200;
+	-webkit-animation: dash 3s ease-in-out forwards;
+	animation: dash 3s ease-in-out forwards;
+	stroke: #2b2b2b;
+}
+
+@keyframes dash {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+#fill {
+	opacity: 0;
+	animation: fill 3.5s ease-in-out forwards;
+	-webkit-animation-delay: .5s;
+    animation-delay: .5s
+}
+
+@keyframes fill {
+	to {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fill {
+	to {
+		opacity: 1;
+	}
+}
