@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	// go to about page after opening animation
 	var current = window.location.pathname.split("/").pop();
-	if (current == "index.html") {	
+	if (current == "index.html" || window.location.href == "wwww.jessheisme.com") {	
 		// once animation finishes on nav
 		$(".nav").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
 			window.location = "work.html";
