@@ -23,11 +23,13 @@ $(document).ready(function() {
 		}
 	});
 
-	// show project description on hover
+	// show project description + thumbnail on hover
 	$(".project-preview h1").hover(function() {
 		var number = $(this).attr('id').slice(-1);
 		$(this).addClass("project-hover-up");
 		$(".project-preview #d" + number).css("opacity","1");
+		$(".project-thumbnail video").fadeOut();
+		$("#v" + number).fadeIn();
 		number = parseInt(number) + 1;
 		$(".project-preview #t" + number).addClass("project-hover-down");
 	}, function() {
