@@ -224,12 +224,14 @@ h1 {
 	line-height: 1.5;
 }
 
-#project-container img {
-	width: 55%;
+#project-container img, #project-container video {
+	min-width: 600px;
+	width: 65%;
+	max-width: 900px;
 	display: block;
 	margin: 50px auto;
 	margin-top: 60px;
-	margin-bottom: 120px;
+	margin-bottom: 100px;
 }
 
 #project-container h2 {
@@ -257,6 +259,7 @@ h1 {
 	color: white;
 	background-color: rgb(255, 176, 56);
 }
+
 
 /******* LOGO ANIMATION ********/
 
