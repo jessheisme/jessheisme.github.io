@@ -23,21 +23,36 @@ $(document).ready(function() {
 		}
 	});
 
+	/*
 	// show project description + thumbnail on hover
 	$(".project-preview h1").hover(function() {
 		var number = $(this).attr('id').slice(-1);
-		$(this).addClass("project-hover-up");
-		$(".project-preview #d" + number).css("opacity","1");
+		number = parseInt(number) - 1
+		$(".project-preview #t" + number).addClass("project-hover-up");
 		$(".project-thumbnail video").fadeOut();
 		$("#v" + number).fadeIn();
-		number = parseInt(number) + 1;
+		number = parseInt(number) + 2;
 		$(".project-preview #t" + number).addClass("project-hover-down");
 	}, function() {
 		var number = $(this).attr('id').slice(-1);
-		$(this).removeClass("project-hover-up");
-		$(".project-preview #d" + number).css("opacity","0");
+		number = parseInt(number) - 1
+		$(".project-preview #t" + number).removeClass("project-hover-up");
 		number = parseInt(number) + 1;
 		$(".project-preview #t" + number).removeClass("project-hover-down");
+	});
+	*/
+
+	$(".project-preview h1 a").mouseenter(function() {
+		var number = $(this).attr('id').slice(-1);
+		$(".project-thumbnail video").fadeOut();
+		$("#v" + number).css("display","block");
+	});
+
+	$(".project-preview h1 a").hover(function() {
+		$(".project-preview h1 a").css("color","#565656");
+		$(".project-preview h1 a").css("border","2px solid transparent");
+		$(this).css("color","rgb(255, 176, 56)");
+		$(this).css("border-left","3px solid rgb(255,176,56)");
 	});
 
 	// focus on clicked

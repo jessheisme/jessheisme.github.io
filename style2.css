@@ -138,62 +138,61 @@ h1 {
 /******** WORK ***********/
 
 .container {
-	font-family: 'Lora';
 	position: absolute;
 	margin: 5%;
 	top: 80px;
 	width: 90%;
 }
 
+#work-container {
+	height: calc(100% - 150px);
+}
+
 .project-preview {
-	text-align: center;
-	line-height: 1.2;
-	width: 400px;
-	margin: 30px auto;
-}
-
-.project-preview a {
-	color: #565656;
-	font-weight: 700;
-	font-size: 1.2em;
-	letter-spacing: 2px;
-}
-
-.project-preview h2 {
 	position: absolute;
-	opacity: 0;
-	font-family: 'Open Sans';
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	font-size: 0.7em;
-	font-weight: 400;
-	color: rgb(161, 161, 161);
-	transition: 1s;
-	left: 50%;
-	margin-top: -5px;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
+	right: 10px;
+	top: 50%;
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+.project-preview h1 a {
+	color: #565656;
+	padding-left: 15px;
+}
+
+.project-preview h1 #t1 {
+	color:  rgb(255, 176, 56); 
+	border-left: 2px solid rgb(255, 176, 56); 
 }
 
 .project-preview h1 {
 	transition: 1s;
-	margin: 0;
+	color: #565656;
+	font-weight: 600;
+	transition: 1s;
+	font-size: 0.8em;
+	margin: 0px;
+	text-transform: uppercase;
 }
 
 .project-thumbnail {
+	width: calc(100% - 200px);
+	height: 90%;
 	position: relative;
-	height: calc(90vh - 360px);
+	margin-top: 10px;
 }
 
 .project-thumbnail video {
 	display: none;
 	position: absolute;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
-	height: 100%;
 	border: 1px solid rgb(232, 232, 232);
-	margin: 0 auto;
+	width: 100%;
+	max-height: 100%;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	object-fit: fill;
 }
 
 .project-thumbnail #v1 {
