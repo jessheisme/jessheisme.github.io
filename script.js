@@ -56,6 +56,7 @@ $(document).ready(function() {
 	});
 
 	// focus on clicked
+	/*
 	$(".project-preview a").click(function(e) {
 		e.preventDefault();
 		$(".project-preview a").css("opacity","0");
@@ -68,4 +69,5 @@ $(document).ready(function() {
 			window.location = newLocation;
 		}, 1500);
 	});
+*/
 })
