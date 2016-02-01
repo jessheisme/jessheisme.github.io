@@ -51,8 +51,8 @@ $(document).ready(function() {
 	$(".project-preview h1 a").hover(function() {
 		$(".project-preview h1 a").css("color","#565656");
 		$(".project-preview h1 a").css("border","2px solid transparent");
-		$(this).css("color","rgb(255, 176, 56)");
-		$(this).css("border-left","3px solid rgb(255,176,56)");
+		$(this).css("color","rgb(255, 112, 22)");
+		$(this).css("border-left","2px solid rgb(255, 112, 22)");
 	});
 
 	// focus on clicked

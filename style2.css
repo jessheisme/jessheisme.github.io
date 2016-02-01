@@ -10,7 +10,7 @@ p {
 
 a {
 	text-decoration: none;
-	color: rgb(255, 176, 56); 
+	color: rgb(255, 112, 22); 
 }
 
 h1 {
@@ -59,7 +59,7 @@ h1 {
 }
 
 .nav li a:hover {
-	color: rgb(255, 176, 56); 
+	color: rgb(255, 112, 22); 
 }
 
 #nav-loaded {
@@ -99,15 +99,15 @@ h1 {
 
 @-webkit-keyframes text-roll {
 	to {
-		-webkit-transform: translateY(-287px);
-		transform: translateY(-287px);
+		-webkit-transform: translateY(-300px);
+		transform: translateY(-300px);
 	}
 }
 
 @keyframes text-roll {
 	to {
-		-webkit-transform: translateY(-287px);
-		transform: translateY(-287px);
+		-webkit-transform: translateY(-300px);
+		transform: translateY(-300px);
 	}
 }
 
@@ -162,8 +162,8 @@ h1 {
 }
 
 .project-preview h1 #t1 {
-	color:  rgb(255, 176, 56); 
-	border-left: 2px solid rgb(255, 176, 56); 
+	color:  rgb(255, 112, 22);  
+	border-left: 2px solid rgb(255, 112, 22); 
 }
 
 .project-preview h1 {
@@ -209,10 +209,17 @@ h1 {
 
 /******* PROJECT VIEW ********/
 
+#project-container {
+	padding-bottom: 110px;
+}
+
 #project-container h1 {
 	margin-top: 25px;
 	text-align: center;
 	font-size: 3.5em;
+	text-decoration: underline;
+	-webkit-text-decoration-color:  rgb(255, 112, 22); 
+	text-decoration-color:  rgb(255, 112, 22); 
 }
 
 #project-container p {
@@ -224,14 +231,31 @@ h1 {
 	line-height: 1.5;
 }
 
-#project-container img, #project-container video {
-	min-width: 600px;
+#project-container img, #project-container video, #project-container iframe {
 	width: 65%;
 	max-width: 900px;
 	display: block;
-	margin: 50px auto;
-	margin-top: 60px;
-	margin-bottom: 100px;
+	margin-top: 100px;
+	margin-bottom: 0px;
+	margin-left: calc(47% - 65% / 2);
+	display: inline-block;
+}
+
+#project-container iframe {
+	height: 400px;
+}
+
+#project-container .side-info {
+	position: absolute;
+	margin-top: 100px;
+	padding-top: 10px;
+	padding-left: 15px;
+	display: inline-block;
+	width: 15%;
+	font-size: 0.75em;
+	border-top: 1.5px solid rgb(255, 112, 22);
+	text-align: left;
+	color: grey;
 }
 
 #project-container h2 {
@@ -241,23 +265,34 @@ h1 {
 	font-weight: 400;
 	font-size: 0.8em;
 	text-align: center;
-	margin: 50px;
+	margin: 70px;
+	margin-bottom: 0px;
 }
 
 #project-container a {
-	color: rgb(255, 176, 56);
+	color: rgb(255, 112, 22); 
 	transition: 1s;
 	-webkit-transition: 1s;
 }
 
 #project-container h2 a {
-	border: 1.5px solid rgb(255, 176, 56); 
+	border: 1.5px solid rgb(255, 112, 22); 
 	padding: 0px 4px;
 }
 
 #project-container h2 a:hover {
 	color: white;
-	background-color: rgb(255, 176, 56);
+	background-color: rgb(255, 112, 22); 
+}
+
+#project-container .description {
+	position: absolute;
+	width: 65%;
+	margin-top: 15px;
+	color: grey;
+	font-weight: 300;
+	margin-left: calc(47% - 65% / 2);
+	text-align: center;
 }
 
 
