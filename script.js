@@ -44,8 +44,9 @@ $(document).ready(function() {
 
 	$(".project-preview h1 a").mouseenter(function() {
 		var number = $(this).attr('id').slice(-1);
-		$(".project-thumbnail video").css("opacity","0");
-		$("#v" + number).css("opacity","1");
+		$(".project-thumbnail video").fadeOut();
+		$("#v" + number).css("display","block");
+
 	});
 
 	$(".project-preview h1 a").hover(function() {
