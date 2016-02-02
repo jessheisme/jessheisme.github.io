@@ -9,6 +9,8 @@ $(document).ready(function() {
 		});
 	}
 
+	$("video").load();
+
 	// fade in 
 	$(".project-preview").hide().fadeIn(1000);
 
