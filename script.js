@@ -9,9 +9,6 @@ $(document).ready(function() {
 		});
 	}
 
-	// fade in 
-	$(".project-preview").hide().fadeIn(1000);
-
 	// sticky nav bar at scrollpoint
 	$(window).scroll(function() {
 		if ($(window).scrollTop() > 58) {

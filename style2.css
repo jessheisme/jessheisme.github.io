@@ -92,10 +92,13 @@ h1 {
 #name-animation #roles {
 	-webkit-animation: text-roll 3s cubic-bezier(.61,0,.36,1) forwards;
 	animation: text-roll 3s cubic-bezier(.61,0,.36,1) forwards;
-	-webkit-animation-delay: 0.5s;
-	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.8s;
+	animation-delay: 0.8s;
 	-webkit-transform: translateY(0px);
 	transform: translateY(0px);
+	color: rgb(255, 112, 22); 
+	position: absolute;
+	display: inline-block;
 }
 
 @-webkit-keyframes text-roll {
@@ -129,11 +132,6 @@ h1 {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-}
-
-#about-container #roles {
-	position: absolute;
-	display: inline-block;
 }
 
 /******** WORK ***********/
