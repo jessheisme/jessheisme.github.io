@@ -9,8 +9,6 @@ $(document).ready(function() {
 		});
 	}
 
-	$("video").load();
-
 	// fade in 
 	$(".project-preview").hide().fadeIn(1000);
 
@@ -47,9 +45,8 @@ $(document).ready(function() {
 	$(".project-preview h1 a").mouseenter(function() {
 		var number = $(this).attr('id').slice(-1);
 		$(".project-thumbnail video").fadeOut();
-		$("#v" + number).get(0).play();
 		$("#v" + number).css("display","block");
-
+		$("#v" + number).get(0).play();
 	});
 
 	$(".project-preview h1 a").hover(function() {
