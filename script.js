@@ -46,7 +46,6 @@ $(document).ready(function() {
 		var number = $(this).attr('id').slice(-1);
 		$(".project-thumbnail video").fadeOut();
 		$("#v" + number).css("display","block");
-		$("#v" + number).get(0).play();
 	});
 
 	$(".project-preview h1 a").hover(function() {
