@@ -9,6 +9,16 @@ $(document).ready(function() {
 		});
 	}
 
+	$("#logo").hover(function() {
+		$("#logo #bg-outline").css("stroke","rgb(255, 112, 22)");
+		$("#logo #bg-fill").css("fill","rgb(255, 112, 22)");
+		$(".draw path").css("stroke","rgb(255, 112, 22)");
+	}, function() {
+		$("#logo #bg-outline").css("stroke","#3F3F3F");
+		$("#logo #bg-fill").css("fill","#3F3F3F");
+		$(".draw path").css("stroke","#3F3F3F");
+	})
+
 	// sticky nav bar at scrollpoint
 	$(window).scroll(function() {
 		if ($(window).scrollTop() > 58) {

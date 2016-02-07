@@ -295,6 +295,10 @@ h1 {
 
 /******* LOGO ANIMATION ********/
 
+path {
+	cursor: pointer;
+}
+
 #logo {
 	position: absolute;
 	width: 300px;
