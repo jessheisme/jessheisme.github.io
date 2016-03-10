@@ -8,7 +8,6 @@ body {
 #container {
 	position: fixed;
 	left: calc(50% - 366px/2);
-	top: 125px;
 	height: 614.4px;
 }
 
@@ -91,7 +90,7 @@ body {
 	display: none;
 	position: absolute;
 	right: calc(50% - 366px/2 - 40px);
-	top: 350px;
+	top: 250px;
 }
 
 #clickme {
@@ -116,7 +115,9 @@ body {
 	font-weight: 100;
 	text-align: center;
 	position: absolute;
-	left: calc(50% - 366px/2 - 220px);
-	top: 380px;
+	left: calc(50% - 556px/2);
+	top: 280px;
 }
+
+
 

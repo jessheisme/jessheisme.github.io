@@ -228,6 +228,15 @@ h1 {
 	line-height: 1.5;
 }
 
+#project-container ul li {
+	font-family: 'Open Sans';
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 30px;
+	font-size: 0.9em;
+	line-height: 1.5;
+}
+
 #project-container img, #project-container video, #project-container iframe {
 	width: 65%;
 	max-width: 900px;
@@ -427,4 +436,33 @@ path {
 		opacity: 1;
 		margin-top: 50px;
 	}
+}
+
+
+/**** STUFF FOR QUAK ****/
+
+#project-container #quak-frame {
+	height: 590px;
+	border: none;
+	margin-left: calc(50% - 65% / 2);
+	margin-top: 30px;
+}
+
+
+.quak h1 {
+	color: #fd4d46;
+}
+
+.quak #intro {
+	font-size: 1.3em;
+	text-align: center;
+	margin-top: 0px;
+}
+
+.quak #quote {
+	text-align: center;
+	font-size: 1.2em;
+	color: #f7be3e;
+	font-weight: 500;
+	margin-top: 40px;
 }
