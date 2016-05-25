@@ -88,8 +88,10 @@ h2 {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	position: relative;
-	left: calc(50% - 380px);
+	left: calc(50% - 390px);
 	font-size: 2em;
+	font-weight: 300;
+	letter-spacing: 2px;
 }
 
 rect {
@@ -124,23 +126,33 @@ polygon {
 }
 
 .option {
-	background: #8DB74A;
+	border: 1px solid #8DB74A;
 	padding: 7px 10px;
 	margin: 5px;
 	display: inline-block;
-	color: white;
+	color: rgb(108, 108, 108);
 	border-radius: 2px;
 	font-weight: 300;
 }
 
 .option:hover {
 	cursor: pointer;
+	background: #8DB74A;
+	transition: 0.3s;
+	color: white;
 }
 
 #done {
 	margin-top: 30px;
-	background: #ff8e48;
-	font-weight: 400;
+	border: 1px solid #ff9242;
+	font-weight: 300;
+	color: #ff9242;
+}
+
+#done:hover {
+	transition: 0.3s;
+	background: #ff9242;
+	color: white;
 }
 
 #cap {
