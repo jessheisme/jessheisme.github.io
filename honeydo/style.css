@@ -23,6 +23,11 @@ body {
 	background: #BED49B;
 }
 
+#description {
+	width: 500px;
+	font-size: 1.2em;
+}
+
 #intro #intro-text {
 	min-width: 500px;
 	float: left;
