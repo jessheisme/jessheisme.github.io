@@ -5,8 +5,27 @@ $(document).ready(function() {
 	$("#solids-option").click(function() {
 		$("polygon#solids").css("opacity","1");
 		$("polygon#solids").css("transform","translateY(10px)");
-		solids = true;
 	})
+
+	$(".option-base").click(function() {
+		$(".option-base").css("background","none");
+		$(".option-base").css("color","rgb(108, 108, 108)");
+		$(this).css("background","#8DB74A");
+		$(this).css("color","white");
+	})
+	$(".option-oil").click(function() {
+		$(".option-oil").css("background","none");
+		$(".option-oil").css("color","rgb(108, 108, 108)");
+		$(this).css("background","#8DB74A");
+		$(this).css("color","white");
+	})
+	$(".option-solid").click(function() {
+		$(".option-solid").css("background","none");
+		$(".option-solid").css("color","rgb(108, 108, 108)");
+		$(this).css("background","#8DB74A");
+		$(this).css("color","white");
+	})
+
 	$("#o1").click(function() {
 		$("#solids").css("fill","#FEE5C6");
 	})
