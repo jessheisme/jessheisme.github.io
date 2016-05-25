@@ -2,11 +2,6 @@ $(document).ready(function() {
 	var solids = false;
 	var base = false;
 	var oil = false;
-	$("#solids-option").click(function() {
-		$("polygon#solids").css("opacity","1");
-		$("polygon#solids").css("transform","translateY(10px)");
-	})
-
 	$(".option-base").click(function() {
 		$(".option-base").css("background","none");
 		$(".option-base").css("color","rgb(108, 108, 108)");
@@ -26,6 +21,12 @@ $(document).ready(function() {
 		$(this).css("color","white");
 	})
 
+	
+	$("#solids-option").click(function() {
+		$("polygon#solids").css("opacity","1");
+		$("polygon#solids").css("transform","translateY(10px)");
+	})
+
 	$("#o1").click(function() {
 		$("#solids").css("fill","#FEE5C6");
 	})
@@ -35,7 +36,6 @@ $(document).ready(function() {
 	$("#o3").click(function() {
 		$("#solids").css("fill","#CE5DA0");
 	})
-
 
 	$("#base-option").click(function() {
 		$("rect#base").css("opacity","1");
