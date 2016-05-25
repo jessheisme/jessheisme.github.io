@@ -247,3 +247,8 @@ polygon {
 	color: #ff9242;
 	cursor: pointer;
 }
+
+#donate {
+	margin-top: 15px;
+	text-align: center;
+}
