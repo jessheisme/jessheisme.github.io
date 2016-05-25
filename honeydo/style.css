@@ -170,8 +170,9 @@ polygon {
 
 #custom-bottle {
 	width: 240px;
+	max-height: 80%;
 	left: calc(50% - 340px);
-	position: relative;
+	position: absolute;
 }
 
 @keyframes entrance-bottle {
