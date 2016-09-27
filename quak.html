@@ -1,54 +1,52 @@
+<!-- SITE BY JESSICA HE © 2016 // JESSHEISME.COM -->
+
 <!DOCTYPE html>
 <html>
 <head>
-  	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width">
-  	<link rel="stylesheet" type="text/css" href="style2.css">
-  	<title>jessheisme.</title>
-	<script src="//fast.eager.io/EQhr_raQqr.js"></script>
-	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-	<script src="script.js"></script>
-  	<script src="pace/pace.js"></script>
-  	<link href="pace/pace.css" rel="stylesheet" />
-  	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  	<link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Jessica He</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Harmattan" rel="stylesheet">
 </head>
 <body>
-<!------------------
+<div id="background-color"></div>
+<div id="left-sidebar-container">
+	<a href="index.html"><img id="logo" src="img/logo.svg"></a>
+	<a class="social-link" href="https://www.instagram.com/jessheisme/">Instagram</a>
+	<a class="social-link" href="https://www.linkedin.com/in/jessheisme">LinkedIn</a>
+	<a class="social-link" href="https://twitter.com/jessheisme">Twitter</a>
+	<a class="social-link" href="https://www.instagram.com/jessheisme/">Instagram</a>
+	<a class="social-link" href="https://soundcloud.com/jessheisme">Soundcloud</a>
+	<a class="social-link" href="https://open.spotify.com/user/jessheisme">Spotify</a>
+</div>
 
-      LOGO
+<div id="about-container">
+	<a href="#">About</a>
+</div>
 
--------------------->
-	<a href="index.html"><img id="logo-loaded" src="logo.svg"></a>
-<!------------------
-
-      TOP NAV
-
--------------------->
-	<div class="nav" id="nav-loaded">
-		<ul>
-			<li><a href="about.html">About</a></li>
-			<li><a href="work.html" style="border-bottom: 2px solid rgb(255, 112, 22); color: rgb(255, 112, 22);">Work</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
+<div class="projectPageContents">
+	<div class="project-page-title" id="quak-title">quak</div>
+	<div class="project-page-stats">
+		<li>UI/UX, Concept</li>
+		<li>Winter 2014</li>
+		<li>After Effects, Illustrator</li>
+		<li>Personal Project</li>
 	</div>
-	<div class="quak container" id="project-container">
-		<h1>QUAK</h1>
-		<p id="intro">Introducing QUAK, the real-time question and answer application that creates a seamless hierarchy of questions and preserve anonymity during presentations.</p>
-		<iframe id="quak-frame"src="quak/index.html">
-		</iframe>
-		<span class="side-info">Technologies used:<br>Adobe After Effects.<br>
-			<br>Winter 2014.</span>
-			<p class="description">An example of the user flow.  This is an older iteration.</p>
-
-		<h2>The Problem</h2>
-		<p>Asking questions during lecture, or any presentation, can be an arduous process for many reasons: we have to hold onto our questions and keep them in our heads until the presenter is ready to answer them, the presenter spends too much time answering "dumb" questions when there are better questions to be asked, or sometimes, we just don't feel like speaking up in front of a large crowd.
-		</p>
-		<p id="quote">"I don't want to speak up in front of the entire class."</p>
-		<p id="quote">"Sometimes I don't even hear the question so I just zone out when the professor is going over the answer."</p>
-		<p id="quote">"I forget what I was going to ask."</p>
-		<h2>Features of QUAK</h2>
-		<ul>
+	<div class="project-page-description">
+		Quak is a mobile Q&A app that gets the <em>important</em> questions answered through user-voted rankings and real-time updates.
+	</div>
+	<iframe id="quak-frame"src="quak/index.html">
+	</iframe>
+	<div class="project-page-detail">Playing with After Effects prototyping. Screens linked in jQuery.</div>
+	<div class="project-page-heading">The Problem</div>
+	<p>Asking questions during lecture, or any presentation, can be an arduous process for many reasons: we have to hold onto our questions and keep them in our heads until the presenter is ready to answer them, the presenter spends too much time answering "dumb" questions when there are better questions to be asked, or sometimes we simply don't feel like speaking up in front of a large crowd.</p>
+	<div class="project-page-quote">"I don't want to speak up in front of the entire class."</div>
+	<div class="project-page-quote">"Sometimes I don't even hear the question so I just zone out when the professor is going over the answer."</div>
+	<div class="project-page-quote">"I forget what I was going to ask."</div>
+	<div class="project-page-heading">The Features</div>
+	<ul>
 		<li>Real-time question submissions</li>
 		<li>Upvote questions that you like</li>
 		<li>Choose to remain anonymous</li>
@@ -56,15 +54,28 @@
 		<li>Color ranges of questions for easy scanning</li>
 		<li>Ability to save questions in electronic notes</li>
 		<li>See what question is currently being answered</li>
-		</ul>
-		<h2>Hi-Fi Mockups (Question User)</h2>
-		<img class="slideshow" id="2" src="img/quak-mocks.png">
-			<span class="side-info">Technologies used:<br>Adobe Illustrator.<br>
-			<br>March 2016.</span>
-		<h2>Initial Sketches + Rough Information Architecture</h2>
-		<img class="slideshow" id="2" src="img/sketches.jpg">
-			<span class="side-info">Technologies used:<br>Pen and paper.<br>
-			<br>March 2016.</span>
+	</ul>
+	<div class="project-page-heading">Brainstorm</div>
+	<img class="project-page-img" src="img/quak-sketch.jpg">
+	<div class="project-page-heading">Mockups</div>
+	<img class="project-page-img-wide" src="img/quak-mocks.png">
+</div>
+
+<div id="grid-container">
+	<div id="grid-icon">
+		<div>
+		<span class="square" id="s1"></span>
+		<span class="square" id="s2"></span>
+		</div>
+		<div>
+		<span class="square" id="s3"></span>
+		<span class="square" id="s4"></span>
+		</div>
 	</div>
-	</body>
+</div>
+<!-- <div id="grid-text">View All</div>
+ -->
+</body>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="script.js"></script>
 </html>

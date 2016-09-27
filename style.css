@@ -1,44 +1,294 @@
+/*SITE BY JESSICA HE © 2016 // JESSHEISME.COM */
+
 body {
-	background: whitesmoke;
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	font-family: 'Harmattan', sans-serif;
 }
 
-svg {
+#background-color {
+	position: fixed;
+	z-index: -100;
+	width: 100%;
+	height: 100%;
+	transition: 1.5s;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#left-sidebar-container {
+	position: fixed;
+	width: 80px;
+	margin: 40px;
+	z-index: 20;
+}
+
+#left-sidebar-container .social-link {
+	color: black;
+	text-decoration: none;
+	margin-left: -5px;
+	padding: 0px 5px;
+}
+
+#left-sidebar-container .social-link:hover {
+	background: rgb(18, 18, 18);
+	color: white
+}
+
+#logo {
 	position: relative;
-	display: block;
-	width: 500px;
+	width: 70px;
+	margin-bottom: 30px;
+	left: -5px;
+}
+
+#grid-container {
+	position: fixed;
+	right: 0px;
+	padding: 10px;
+	margin: 30px;
+	transition: 0.1s ease-out;
+	z-index: 20;
+}
+
+#grid-container:hover {
+	cursor: pointer;
+	transform: rotate(-90deg);
+}
+
+.square {
+	width: 10px;
+	height: 10px;
+	float: left;
+	background: black;
+	margin: 1px;
+	transition: 0.3s ease;
+	opacity: 0.85;
+}
+
+.gridHover {
+	margin: 4px;
+	height: 16px;
+	width: 16px;
+	opacity: 1;
+}
+
+#grid-text {
+	display: none;
+	position: fixed;
+	margin: 40px;
+	margin-top: 20px;
+	right: 8px;
+	font-size: 12px;
+}
+
+
+#project-title-container {
+	position: fixed;
+	z-index: 10;
+	top: 100px;
+	left: 180px;
 	margin: 0 auto;
-	margin-top: 25%;
+	width: calc(100vw - 500px);
 }
 
-path {
-	stroke-dasharray: 1200;
-	stroke-dashoffset: 1200;
-	-webkit-animation: dash 3s ease-in-out forwards;
-	animation: dash 3s ease-in-out forwards;
-	stroke: #2b2b2b;
+.project-title {
+	display: none;
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 17vw;
+	line-height: 0.8;
+	letter-spacing: 10px;
+	color: rgb(18, 18, 18);
 }
 
-@keyframes dash {
-	to {
-		stroke-dashoffset: 0;
-	}
+.project-title:hover {
+	cursor: pointer;
+	text-decoration: underline;
 }
 
-#fill {
-	opacity: 0;
-	animation: fill 3.5s ease-in-out forwards;
-	-webkit-animation-delay: .5s;
-    animation-delay: .5s
+#p0 {
+	display: block;
 }
 
-@keyframes fill {
-	to {
-		opacity: 1;
-	}
+#about-container {
+	position: fixed;
+	bottom: 0px;
+	margin: 40px;
+	z-index: 20;
 }
 
-@-webkit-keyframes fill {
-	to {
-		opacity: 1;
-	}
+#about-container a {
+	margin-left: -5px;
+	padding: 0px 5px;
+}
+
+#about-container a:hover {
+	background: rgb(18, 18, 18);
+	color: white
+}
+
+#background-image-container {
+	position: absolute;
+	z-index: 1;
+	width: calc(100%);
+	margin-top: 70vh;
+}
+
+.project-image {
+	max-width: 900px;
+	width: 65%;
+	margin-bottom: 45vh;
+	opacity: 0.7;
+	margin-left: 25%;
+	transition: 0.2s ease;
+}
+
+.project-image:hover {
+	cursor: pointer;
+	opacity: 0.95;
+}
+
+/***** PROJECT PAGE ******/
+
+.projectPageContents {
+	position: absolute;
+	top: 40px;
+	left: 180px;
+	width: calc(100vw - 310px);
+	padding-bottom: 150px;
+}
+
+.project-page-title {
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 15vw;
+	line-height: 0.8;
+	letter-spacing: 5px;
+	color: rgb(62, 62, 62);
+}
+
+/*special case*/
+#quak-title {
+	padding-bottom: 30px;
+}
+
+.project-page-stats {
+	margin-top: 30px;
+}
+
+.project-page-stats li {
+	list-style: none;
+	line-height: 1;
+	letter-spacing: 2px;
+	color: rgb(154, 154, 154);
+	border-left: 10px solid rgba(255, 202, 71, 0.69);
+	padding-left: 15px;
+}
+
+.project-page-description {
+	margin: 30px 0px;
+	width: 100%;
+	min-width: 280px;
+	max-width: 900px;
+	font-size: 2em;
+	line-height: 1.25;
+}
+
+.project-page-heading {
+	display: inline-block;
+	font-size: 3em;
+	font-family: 'Reem Kufi';
+	text-transform: lowercase;
+	font-weight: 700;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-right: 50px;
+	border-bottom: 5px solid rgba(255, 214, 9, 0.6);
+}
+
+.project-page-detail {
+	color: rgb(154, 154, 154);
+	width: 500px;
+	display: block;
+	margin: 0px auto;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.projectPageContents p {
+	max-width: 600px;
+	min-width: 250px;
+	width: 100%;
+	font-size: 1.5em;
+	line-height: 1.3;
+	margin: 30px;
+	margin-left: 50%;
+	transform: translateX(-60%);
+	color: rgb(62, 62, 62);
+}
+
+.projectPageContents iframe {
+	height: 600px;
+	border: none;
+	width: 600px;
+	display: block;
+	margin: 0 auto;
+}
+
+.projectPageContents a {
+	color: rgba(255, 202, 71, 1);
+}
+
+.projectPageContents .highlight {
+	background: rgba(255, 202, 71, 0.5);
+	margin: 0px 3px;
+}
+
+.projectPageContents #quak-frame {
+	transform: translateX(10px);
+}
+
+.project-page-quote {
+	width: 80%;
+	min-width: 200px;
+	max-width: 600px;
+	font-size: 1.5em;
+	color: rgba(255, 214, 9, 0.8);
+	margin-left: 50%;
+	transform: translateX(-60%);
+	font-family: 'Reem Kufi';
+}
+
+.projectPageContents li {
+	font-size: 1.2em;
+	color: rgb(62, 62, 62);
+}
+
+.projectPageContents ul {
+	margin-left: 50%;
+	transform: translateX(-60%);
+	min-width: 300px;
+}
+
+.project-page-img {
+	width: 60%;
+	max-width: 1200px;
+	min-width: 300px;
+	margin: 30px;
+	max-height: 70%;
+	object-fit: contain;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+.project-page-img-wide {
+	width: 90%;
+	max-width: 1200px;
+	min-width: 300px;
+	max-height: 85%;
+	object-fit: contain;
+	margin: 30px;
 }
