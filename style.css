@@ -327,6 +327,11 @@ a {
 	color: white;
 }
 
+.aboutPageContents a {
+	color: white;
+	text-decoration: underline;
+}
+
 /**** animating jessheis_____ ****/
 
 #name-animation {
