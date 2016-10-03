@@ -131,6 +131,7 @@ a {
 	color: white
 }
 
+
 #background-image-container {
 	position: absolute;
 	z-index: 1;
@@ -292,3 +293,111 @@ a {
 	object-fit: contain;
 	margin: 30px;
 }
+
+/***** ABOUT PAGE ****/
+
+.aboutPageContents {
+	position: absolute;
+	top: 40px;
+	left: 180px;
+	width: calc(100vw - 310px);
+	padding-bottom: 150px;
+}
+
+.aboutPageContents img {
+	width: 500px;
+	margin-top: 80px;
+	margin-left: 150px;
+	opacity: 0.9;
+}
+
+.aboutPageContents #about-me {
+	padding: 10px 50px;
+	width: 350px;
+	position: absolute;
+	top: 200px;
+	left: 400px;
+	line-height: 2;
+	text-align: justify;
+}
+
+.aboutPageContents p {
+	background: rgba(0, 0, 0, 0.77);
+	display: inline;
+	color: white;
+}
+
+/**** animating jessheis_____ ****/
+
+#name-animation {
+	opacity: 0.4;
+	aimation: fade-in 1.5s 4s ease forwards;
+	-webkit-animation: fade-in 1.5s 4s ease forwards;
+}
+
+#name-animation h3 {
+	position: relative;
+	font-size: 100px;
+	width: 750px;
+	height: 130px;
+	overflow: hidden;
+	text-transform: lowercase;
+	color: rgb(182, 182, 182);
+	margin: 50px;
+	margin-top: 30px;
+}
+
+#name-animation ul {
+	margin-top: 0;
+	list-style: none;
+	padding: 0;
+}
+
+#name-animation li {
+	height: 100px;
+	color: rgba(0,0,0,0.6);
+}
+
+#name-animation li:last-child {
+	padding-top: 5px;
+}
+
+#name-animation #roles {
+	-webkit-animation: text-roll 4s cubic-bezier(0.8, -0.3, 0.45, 1.25) forwards;
+	animation: text-roll 4s cubic-bezier(0.8, -0.3, 0.45, 1.25) forwards;
+	-webkit-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+	-webkit-transform: translateY(0px);
+	transform: translateY(0px);
+	color: rgb(255, 112, 22); 
+	position: absolute;
+	display: inline-block;
+}
+
+@-webkit-keyframes text-roll {
+	to {
+		-webkit-transform: translateY(-705px);
+		transform: translateY(-705px);
+	}
+}
+
+@keyframes text-roll {
+	to {
+		-webkit-transform: translateY(-705px);
+		transform: translateY(-705px);
+	}
+}
+
+@-webkit-keyframes fade-in {
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fade-in {
+	to {
+		opacity: 1;
+	}
+}
+
+/**** end animation code jessheis______ ****/

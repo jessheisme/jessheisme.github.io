@@ -48,8 +48,12 @@ $(document).ready(function() {
 		});
 
 		// change background color
-		var backgroundColors = {3: "white", 2: "rgb(237, 194, 201)", 1: "rgb(203, 238, 229)", 4: "rgb(213, 235, 183)"};
+		var backgroundColors = {3: "#fffbcc", 2: "rgb(237, 194, 201)", 1: "rgb(203, 238, 229)", 4: "rgb(213, 235, 183)"};
 		$("#background-color").css("background", backgroundColors[projectNumber])
+		// reset background to white if scrolled to top
+		if (scrollTop <= 10) {
+			$("#background-color").css("background","white");
+		}
 
 	});
 
