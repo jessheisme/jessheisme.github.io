@@ -1,4 +1,4 @@
-/*SITE BY JESSICA HE © 2016 // JESSHEISME.COM */
+/*SITE BY JESSICA HE Â© 2016 // JESSHEISME.COM */
 
 body {
 	margin: 0;
@@ -343,13 +343,15 @@ a {
 #name-animation h3 {
 	position: relative;
 	font-size: 100px;
-	width: 750px;
+	width: 950px;
 	height: 130px;
 	overflow: hidden;
 	text-transform: lowercase;
 	color: rgb(182, 182, 182);
 	margin: 50px;
 	margin-top: 30px;
+	letter-spacing: 5px;
+	font-weight: 300;
 }
 
 #name-animation ul {
