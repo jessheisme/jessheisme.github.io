@@ -105,6 +105,9 @@ a {
 	color: rgb(18, 18, 18);
 }
 
+.project-title:hover {
+	cursor: pointer;
+}
 
 #p0 {
 	display: block;
@@ -132,7 +135,7 @@ a {
 	position: absolute;
 	z-index: 1;
 	width: calc(100%);
-	margin-top: 50vh;
+	margin-top: 60vh;
 }
 
 .project-image {
@@ -151,7 +154,7 @@ a {
 
 .project-image:hover {
 	cursor: pointer;
-	opacity: 0.95;
+	opacity: 0.95 !important;
 }
 
 /***** PROJECT PAGE ******/

@@ -23,7 +23,7 @@ $(document).ready(function() {
 			nextImage.addClass("first-image");
 		}
 		// change project name scrolling up
-		if (distance >= marker + 40 && scrollTop > 0) {
+		if (distance >= marker + 30 && scrollTop > 0) {
 			$(".first-image").removeClass("first-image");
 			prevImage.addClass("first-image");
 		}
@@ -32,6 +32,12 @@ $(document).ready(function() {
 		var projectID = $("#p" + projectNumber);
 		var projectName = projectID.html();
 		$("#p0").text(projectName);
+
+		$(".project-title").hover(function() {
+			$("#i" + $(".first-image").attr('id').slice(-1)).css("opacity","0.95");
+		}, function() {
+			$("#i" + $(".first-image").attr('id').slice(-1)).css("opacity","0.7");
+		})
 
 		// reset if scrolled to top
 		if (scrollTop <= 0) {
@@ -57,15 +63,6 @@ $(document).ready(function() {
 
 	});
 
-
-	$("#grid-container").hover(function() {
-		$(".square").addClass("gridHover");
-		$("#grid-text").delay(200).fadeIn(400);
-	}, function() {
-		$("#grid-text").hide();
-		$(".square").removeClass("gridHover");
-	}
-	);
 
 
 })
