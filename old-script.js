@@ -17,22 +17,6 @@ $(document).ready(function() {
 		var nextImage = $(".first-image").next();
 		var prevImage = $(".first-image").prev();
 
-
-		// sticky project title
-		if (scrollTop >= 400) {
-			/***** BAD CODE CAN WRITE BETTER BUT DONT KNOW HOW RIGHT NOW *****/
-			$("body #project-title-container").css("position","fixed");
-			$("body #project-title-container").css("top","100px");
-			$("#left-sidebar-container").fadeIn();
-		}
-		// unstick project title
-		if (scrollTop < 400) {
-			/***** BAD CODE CAN WRITE BETTER BUT DONT KNOW HOW RIGHT NOW *****/
-			$("body #project-title-container").css("position","absolute");
-			$("body #project-title-container").css("top","500px");
-			$("#left-sidebar-container").fadeOut();
-		}
-
 		// change project name scrolling down
 		if (distance < -300 && scrollTop > 0) {
 			$(".first-image").removeClass("first-image");
@@ -42,7 +26,6 @@ $(document).ready(function() {
 		if (distance >= marker + 30 && scrollTop > 0) {
 			$(".first-image").removeClass("first-image");
 			prevImage.addClass("first-image");
-			$("#intro").fadeOut();
 		}
 		// get and change project name
 		var projectNumber = $(".first-image").attr('id').slice(-1);
@@ -51,16 +34,14 @@ $(document).ready(function() {
 		$("#p0").text(projectName);
 
 		$(".project-title").hover(function() {
-			$("#i" + $(".first-image").attr('id').slice(-1)).css("opacity","1");
+			$("#i" + $(".first-image").attr('id').slice(-1)).css("opacity","0.8");
 		}, function() {
-			$("#i" + $(".first-image").attr('id').slice(-1)).css("opacity","0.95");
+			$("#i" + $(".first-image").attr('id').slice(-1)).css("opacity","1");
 		})
 
 		// reset if scrolled to top
 		if (scrollTop <= 0) {
 			$("#p0").text("my projects");
-			$("#intro").fadeIn();
-			$("i1").addClass(".first-image")
 		}
 
 		// links to go to project page (from title and thumbnail)
