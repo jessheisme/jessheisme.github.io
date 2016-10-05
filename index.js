@@ -23,7 +23,7 @@ $(document).ready(function() {
 			nextImage.addClass("first-image");
 		}
 		// change project name scrolling up
-		if (distance >= marker + 50 && scrollTop > 0) {
+		if (distance >= marker + 40 && scrollTop > 0) {
 			$(".first-image").removeClass("first-image");
 			prevImage.addClass("first-image");
 		}
