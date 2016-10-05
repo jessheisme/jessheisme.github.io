@@ -34,9 +34,9 @@ $(document).ready(function() {
 		$("#p0").text(projectName);
 
 		$(".project-title").hover(function() {
-			$("#i" + $(".first-image").attr('id').slice(-1)).css("opacity","0.95");
+			$("#i" + $(".first-image").attr('id').slice(-1)).css("opacity","0.8");
 		}, function() {
-			$("#i" + $(".first-image").attr('id').slice(-1)).css("opacity","0.7");
+			$("#i" + $(".first-image").attr('id').slice(-1)).css("opacity","1");
 		})
 
 		// reset if scrolled to top
