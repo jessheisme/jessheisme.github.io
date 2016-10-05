@@ -1,7 +1,6 @@
 // SITE BY JESSICA HE © 2016 // JESSHEISME.COM 
 
 $(document).ready(function() {
-
 	var marker = $("#background-image-container").offset().top - $(window).scrollTop();
 	
 	
