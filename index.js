@@ -38,7 +38,7 @@ $(document).ready(function() {
 			nextImage.addClass("first-image");
 		}
 		// change project name scrolling up
-		if (distance >= marker + 30 && scrollTop > 0) {
+		if (distance >= marker + 20 && scrollTop > 0) {
 			$(".first-image").removeClass("first-image");
 			prevImage.addClass("first-image");
 			$("#intro").fadeOut();
