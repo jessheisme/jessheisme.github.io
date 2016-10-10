@@ -68,7 +68,7 @@ $(document).ready(function() {
 			window.location.href = linkDictionary[projectNumber];
 		});
 		$(".project-image").click(function () {
-			window.location.href = linkDictionary[projectNumber];
+			window.location.href = linkDictionary[$(this).attr('id').slice(-1)];
 		});
 
 		// change background color
