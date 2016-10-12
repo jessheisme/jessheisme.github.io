@@ -1,6 +1,17 @@
 // SITE BY JESSICA HE © 2016 // JESSHEISME.COM 
 
 $(document).ready(function() {
+
+	$('#nav-icon1').click(function(){
+		if ($("#nav-icon1").hasClass("open")) {
+			$("#menu-overlay").fadeOut(200);
+		} else {
+			$("#menu-overlay").fadeIn(200);
+		}
+		$(this).toggleClass('open');
+	});
+
+
 	var marker = $("#background-image-container").offset().top - $(window).scrollTop();
 	
 	
