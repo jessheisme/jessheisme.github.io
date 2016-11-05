@@ -93,7 +93,7 @@ window.onload = function(){
     	$("#code").fadeIn();
     	$("#globe").css("animation","1s ease shake infinite");
  
-    	mp = 200;
+    	mp = mp + 150;
     	particles = [];
 		for(var i = 0; i < mp; i++)
 		{
