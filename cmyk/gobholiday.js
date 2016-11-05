@@ -1,7 +1,11 @@
+
 window.onload = function(){
-	//canvas init
+
+    //canvas init
 	var canvas = document.getElementById("canvas");
 	var ctx = canvas.getContext("2d");
+
+	var lotsofsnow = false;
 
 	//canvas dimensions
 	var W = window.innerWidth;
@@ -10,7 +14,7 @@ window.onload = function(){
 	canvas.height = H;
 
 	//snowflake particles
-	var mp = 2005; //max particles
+	var mp = 20; //max particles
 	var particles = [];
 	for(var i = 0; i < mp; i++)
 	{
@@ -22,24 +26,7 @@ window.onload = function(){
 		})
 	}
 
-	//Lets draw the flakes
-	function draw()
-	{
-		ctx.clearRect(0, 0, W, H);
-
-		ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
-		ctx.beginPath();
-		for(var i = 0; i < mp; i++)
-		{
-			var p = particles[i];
-			ctx.moveTo(p.x, p.y);
-			ctx.arc(p.x, p.y, p.r, 0, Math.PI*2, true);
-		}
-		ctx.fill();
-		update();
-	}
-
-	//Function to move the snowflakes
+//Function to move the snowflakes
 	//angle will be an ongoing incremental flag. Sin and Cos functions will be applied to it to create vertical and horizontal movements of the flakes
 	var angle = 0;
 	function update()
@@ -81,6 +68,44 @@ window.onload = function(){
         }
     }
 
-    //animation loop
+
+//Lets draw the flakes
+	function draw()
+	{
+
+		ctx.clearRect(0, 0, W, H);
+
+		ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
+		ctx.beginPath();
+		for(var i = 0; i < mp; i++)
+		{
+			var p = particles[i];
+			ctx.moveTo(p.x, p.y);
+			ctx.arc(p.x, p.y, p.r, 0, Math.PI*2, true);
+		}
+		ctx.fill();
+		update();
+	}
+	//animation loop
     setInterval(draw, 33);
+
+	$("#button").click(function() {
+    	$("#code").fadeIn();
+    	$("#globe").css("animation","1s ease shake infinite");
+ 
+    	mp = 200;
+    	particles = [];
+		for(var i = 0; i < mp; i++)
+		{
+			particles.push({
+				x: Math.random()*W, //x-coordinate
+				y: Math.random()*H, //y-coordinate
+				r: Math.random()*4+1, //radius
+				d: Math.random()*mp //density
+			})
+		}
+		angle = 0
+    	setInterval(draw, 33);
+    });
+    
 }
