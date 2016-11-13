@@ -55,13 +55,13 @@ $(document).ready(function() {
 		}
 		console.log("distance: " + distance + "\nscrollTop: " + scrollTop + "\nmarker: " + marker);
 		// change project name scrolling down
-		if (distance < -300 && scrollTop > 0) {
+		if (distance < -250 && scrollTop > 0) {
 			console.log("change1");
 			$(".first-image").removeClass("first-image");
 			nextImage.addClass("first-image");
 		}
 		// change project name scrolling up
-		if (distance >= marker + 20 && scrollTop > 0) {
+		if (distance >= marker && scrollTop > 0) {
 			console.log("change2");
 			$(".first-image").removeClass("first-image");
 			prevImage.addClass("first-image");
