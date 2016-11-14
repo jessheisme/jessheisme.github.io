@@ -1,4 +1,4 @@
-/*SITE BY JESSICA HE ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â© 2016 // JESSHEISME.COM */
+/*SITE BY JESSICA HE © 2016 // JESSHEISME.COM */
 
 body {
 	margin: 0;
@@ -179,6 +179,9 @@ a {
 	padding-top: 125px;
 }
 
+#intro #highlight {
+	border-bottom: 2px solid rgba(255, 202, 71, 1);
+}
 
 #project-title-container {
 	position: absolute;
