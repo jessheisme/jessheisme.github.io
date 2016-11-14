@@ -21,6 +21,13 @@ $(document).ready(function() {
 		$(this).toggleClass('open');
 	});
 
+	// highlight current page in left nav
+	$(".social-link").each(function() {
+		if ($(this).prop('href') == window.location.href) {
+			$(this).addClass('current');
+		}
+	});
+
 
 })
 

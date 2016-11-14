@@ -39,6 +39,7 @@ $(document).ready(function() {
 			$("body #project-title-container").css("position","fixed");
 			$("body #project-title-container").css("top","100px");
 			$("#left-sidebar-container").fadeIn();
+			$("#about-container").fadeIn();
 
 			// get and change project name
 			var projectNumber = $(".first-image").attr('id').slice(-1);
@@ -52,6 +53,7 @@ $(document).ready(function() {
 			$("body #project-title-container").css("position","absolute");
 			$("body #project-title-container").css("top","400px");
 			$("#left-sidebar-container").fadeOut();
+			$("#about-container").fadeOut();
 		}
 		console.log("distance: " + distance + "\nscrollTop: " + scrollTop + "\nmarker: " + marker);
 		// change project name scrolling down
@@ -61,7 +63,7 @@ $(document).ready(function() {
 			nextImage.addClass("first-image");
 		}
 		// change project name scrolling up
-		if (distance >= marker && scrollTop > 0) {
+		if (distance+350 >= marker && scrollTop > 0) {
 			console.log("change2");
 			$(".first-image").removeClass("first-image");
 			prevImage.addClass("first-image");
@@ -90,7 +92,7 @@ $(document).ready(function() {
 		});
 
 		// change background color
-		var backgroundColors = {3: "#fffbcc", 2: "rgb(237, 194, 201)", 1: "rgb(203, 238, 229)", 4: "rgb(213, 235, 183)"};
+		var backgroundColors = {3: "#fffbcc", 2: "rgb(239, 220, 234)", 1: "rgb(239, 222, 189)", 4: "rgb(213, 235, 183)", 6: "rgb(189, 239, 212)", 5: "rgb(220, 239, 236)"};
 		$("#background-color").css("background", backgroundColors[projectNumber])
 		// reset background to white if scrolled to top
 		if (scrollTop <= 10) {
