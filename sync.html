@@ -13,7 +13,7 @@
 </head>
 <body>
 <div id="background-color"></div>
-<div id="left-sidebar-container" style="display:none;">
+<div id="left-sidebar-container">
 	<a href="index.html"><img id="logo" src="img/logo.svg"></a>
 	<a class="social-link" href="https://www.linkedin.com/in/jessheisme" target="_blank">LinkedIn</a>
 	<a class="social-link" href="https://www.instagram.com/jessheisme/" target="_blank">Instagram</a>
@@ -21,24 +21,34 @@
 	<a class="social-link" href="https://soundcloud.com/jessheisme" target="_blank">Soundcloud</a>
 	<a class="social-link" href="https://open.spotify.com/user/jessheisme" target="_blank">Spotify</a>
 </div>
+
 <div id="about-container">
 	<a href="about.html">About</a>
 </div>
-<!-- TO CHANGE THE ORDER OF A PROJECT, CHANGE THE ORDER OF ITS THUMBNAIL IMAGE BELOW -->
-<!-- NEVER CHANGE PROJECT IDS -->
-<div id="intro">
-	<p>
-	Hey there, I'm Jessica!  I'm a product designer/engineer from Vancouver, Canada and I'm about to graduate from UC Berkeley this spring with a degree in Cognitive Science.  Check out some of my work below!</p>
+
+<div class="projectPageContents">
+	<div class="project-page-title" id="quak-title">Sync</div>
+	<div class="project-page-stats">
+		<li>UI/UX</li>
+		<li>Spring 2016</li>
+		<li>Principle, Sketch</li>
+		<li>LA Hacks</li>
 	</div>
-<div id="project-title-container">
-	<div class="project-title" id="p0">my projects</div>
-	<div class="project-title" id="p3">family map</div>
-	<div class="project-title" id="p2">security ninjas</div>
-	<div class="project-title" id="p1">quak</div>
-	<div class="project-title" id="p4">issues</div>
-	<div class="project-title" id="p5">yigit</div>
-	<div class="project-title" id="p6">sync</div>
+	<div class="project-page-description">
+		Sync utilizes Spotify's API to assign music compatibility scores among friends.  What started as a project for <a target="_blank" href="http://lahacks.com">LA Hacks</a>, continued to be a personal project of mine as I wanted to learn how to prototype with <a href="http://principleformac.com/index.html" target="_blank">Principle</a>.
+	</div>
+	<img class="project-page-img" src="img/sync.gif">
+	<div class="project-page-detail">A prototype of Sync built with Principle.</div>
+	<div class="project-page-heading">Goals</div>
+	<p>I wanted Sync to feel as if it were part of Spotify's suite of products and took inspiration from Spotify's 2015 'Year in Music' website, which utilized big, bold, white text on colorful gradients.</p>
+	<img class="project-page-img" src="img/yearinmusic.png">
+	<div class="project-page-detail">A screenshot of Spotify's 'Year in Music' site.</div>
+	<img class="project-page-img-wide" src="img/sync_thumb.png">
+	<div class="project-page-detail">Mockups of Sync built with Sketch.</div>
+	<p>This project also allowed me to get my feet wet in prototyping with Principle, which I really enjoyed!</p>
+	<img class="project-page-img" src="img/sync_principle.jpg">
 </div>
+
 <div id="grid-container">
 	<div id="nav-icon1">
 	  <span></span>
@@ -55,16 +65,7 @@
 	</ul>
 </div>
 
-<!------ CHANGE PROJECT ORDER HERE ---->
-<div id="background-image-container">
-	<img class="project-image" id="i3" src="img/locationlabs_thumb.png">
-	<img class="project-image" id="i2" src="img/ninjas2_thumb.png">
-	<img class="project-image first-image" id="i1" src="img/quak_thumb.png">
-	<img class="project-image" id="i6" src="img/sync_thumb.png">
-	<img class="project-image" id="i4" src="img/issues_home.png">
-	<img class="project-image" id="i5" src="img/yigi_thumb.png">
-</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-<script src="index.js"></script>
+<script src="script.js"></script>
 </html>

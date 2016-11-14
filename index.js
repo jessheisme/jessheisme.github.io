@@ -81,7 +81,7 @@ $(document).ready(function() {
 		}
 
 		// links to go to project page (from title and thumbnail)
-		var linkDictionary = {1: "quak.html", 2: "security-ninjas.html", 3: "family-map.html", 4: "comingsoon.html", 5: "comingsoon.html", 6: "comingsoon.html"} // CHANGE PROJECT LINKS HERE
+		var linkDictionary = {1: "quak.html", 2: "security-ninjas.html", 3: "family-map.html", 4: "comingsoon.html", 5: "comingsoon.html", 6: "sync.html"} // CHANGE PROJECT LINKS HERE
 		$("#p0").click(function () {
 			window.location.href = linkDictionary[projectNumber];
 		});
