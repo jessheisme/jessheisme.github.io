@@ -83,7 +83,7 @@ $(document).ready(function() {
 		}
 
 		// links to go to project page (from title and thumbnail)
-		var linkDictionary = {1: "quak.html", 2: "security-ninjas.html", 3: "family-map.html", 4: "comingsoon.html", 5: "comingsoon.html", 6: "sync.html"} // CHANGE PROJECT LINKS HERE
+		var linkDictionary = {1: "quak.html", 2: "security-ninjas.html", 3: "family-map.html", 4: "comingsoon.html", 5: "comingsoon.html", 6: "sync.html", 7: "upstream.html"} // CHANGE PROJECT LINKS HERE
 		$("#p0").click(function () {
 			window.location.href = linkDictionary[projectNumber];
 		});
@@ -92,7 +92,7 @@ $(document).ready(function() {
 		});
 
 		// change background color
-		var backgroundColors = {3: "#fffbcc", 2: "rgb(239, 220, 234)", 1: "rgb(239, 222, 189)", 4: "rgb(213, 235, 183)", 6: "rgb(189, 239, 212)", 5: "rgb(220, 239, 236)"};
+		var backgroundColors = {3: "#fffbcc", 2: "rgb(239, 220, 234)", 1: "rgb(239, 222, 189)", 4: "rgb(213, 235, 183)", 6: "rgb(189, 239, 212)", 5: "rgb(220, 239, 236)", 7: "rgb(255, 203, 173)"};
 		$("#background-color").css("background", backgroundColors[projectNumber])
 		// reset background to white if scrolled to top
 		if (scrollTop <= 10) {
