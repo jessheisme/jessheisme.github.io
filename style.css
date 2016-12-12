@@ -185,7 +185,6 @@ a {
 #project-title-container {
 	position: absolute;
 	z-index: 10;
-	top: 350px;
 	left: 180px;
 	margin: 0 auto;
 	width: 14vw;
