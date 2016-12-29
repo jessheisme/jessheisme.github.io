@@ -51,7 +51,7 @@ $(document).ready(function() {
 		// unstick project title
 		if (scrollTop < 400) {
 			$("body #project-title-container").css("position","absolute");
-			$("body #project-title-container").css("top","400px");
+			$("body #project-title-container").css("top","initial");
 			$("#left-sidebar-container").fadeOut();
 			$("#about-container").fadeOut();
 		}
