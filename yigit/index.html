@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>yigit</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:100,300,400,500" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="landing-text-container">
+		<div class="prompt" id="city-prompt">I am going to 
+			<div class="input-field">
+				<input id="city_name" placeholder="San Franciso" type="text">
+				<label class="white-text" for="city_name">City Name</label>
+			</div>
+		</div>
+		<div class="prompt" id="date-prompt">from 
+			<div class="input-field">
+				<input class="datepicker" id="from_date" type="date">
+			</div>
+			 to 
+			<div class="input-field">
+				<input class="datepicker" id="to_date" type="date">
+			</div>
+		</div>
+	</div>
+	<a href="planner.html"><div id="go-container">
+		<img id="plane" src="img/airplane.png">
+		<div id="go-text-container">Take me there</div>
+	</div></a>
+	<div id="overlay"></div>
+	<img id="background" src="img/newyork.jpg">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

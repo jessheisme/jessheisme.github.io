@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+
+#header-container {
+    height: 39px;
+    position: relative;
+    background: #fdfdfd;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#city-name {
+    position: absolute;
+    margin: 12px 0px;
+    width: 100%;
+    font-family: 'Harmattan';
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    opacity: 0.4;
+    text-align: center;
+}
+
+#suitcase {
+    height: 17px;
+    top: 12px;
+    position: absolute;
+    right: 12px;
+}
+
+#feed-container {
+    padding-top: 8px;
+}
+
+.place-name {
+    margin-left: 8px;
+    font-family: 'Harmattan';
+    opacity: 0.7;
+    letter-spacing: 0.2px;
+}
+
+.image-carousel {
+    height: 100vw;
+    position: relative;
+}
+
+.image-carousel img {
+    height: 100vw;
+    object-fit: cover;
+}
