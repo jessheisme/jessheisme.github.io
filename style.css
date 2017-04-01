@@ -452,8 +452,8 @@ a {
 
 .aboutPageContents img {
 	width: 500px;
-	margin-top: 80px;
-	margin-left: 150px;
+	margin-top: 50px;
+	margin-left: 450px;
 	opacity: 0.9;
 }
 
@@ -462,15 +462,13 @@ a {
 	width: 350px;
 	position: absolute;
 	top: 200px;
-	left: 400px;
 	line-height: 2;
 	text-align: justify;
 }
 
 .aboutPageContents p {
-	background: rgba(0, 0, 0, 0.77);
 	display: inline;
-	color: white;
+	color: black;
 }
 
 .aboutPageContents a {
@@ -478,8 +476,12 @@ a {
 	text-decoration: underline;
 }
 
+#social-link-container {
+	margin-top: 100px;
+	margin-left: 50px;
+}
+
 #social-link-container a {
-	margin-top: 10px;
 	color: black;
 }
 
