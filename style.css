@@ -203,9 +203,9 @@ a {
 	color: rgb(18, 18, 18);
 }
 
-/*.project-title:hover {
+.project-title:hover {
 	cursor: pointer;
-}*/
+}
 
 #p0 {
 	display: block;
@@ -228,6 +228,14 @@ a {
 	color: white
 }
 
+#footer {
+	display: none;
+	position: fixed;
+	bottom: 10px;
+	left: 40px;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.41);
+}
 
 #background-image-container {
 	position: absolute;
