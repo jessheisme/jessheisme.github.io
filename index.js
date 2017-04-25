@@ -74,7 +74,7 @@ $(document).ready(function() {
 		}
 		// console.log("distance: " + distance + "\nscrollTop: " + scrollTop + "\nmarker: " + marker);
 		// change project name scrolling down
-		if (distance < -50 && scrollTop > 0) {
+		if (distance < -260 && scrollTop > 0) {
 			$(".first-image").removeClass("first-image");
 			nextImage.addClass("first-image");
 		}
