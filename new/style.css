@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: 'Archivo', sans-serif;
+    background-color: rgb(252, 252, 252);
+}
+
+#speil {
+	width: 780px;
+	margin: 100px auto 50px auto;
+	font-size: 2.8rem;
+	color: #1C1714;
+}
+
+#grid-wrapper {
+	margin: 0 auto;
+    width: 825px;
+}
+
+.grid {
+	width: 370px;
+	height: 253.33px;
+	display: inline-block;
+    display: inline-block;
+    margin: 20px;
+	position: relative;
+}
+
+.grid p {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	color: #a2998f;
+	letter-spacing: 1px;
+	font-size: 0.9rem;
+}
+
+.highlight {
+	color: #febaa2;
+}
+
+.thumbnail-container {
+    width: 100%;
+	height: 100%;
+	position: relative;
+	transition: 0.45s cubic-bezier(0.51, -0.8, 0.3, 0.99);
+	-webkit-transition: 0.45s cubic-bezier(0.51, -0.8, 0.3, 0.99);
+	-moz-transition: 0.45s cubic-bezier(0.51, -0.8, 0.3, 0.99);
+}
+
+.thumbnail-container:hover {
+	top: -35px;
+}
+
+.thumbnail {
+    width: 100%;
+	position: absolute;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, .04);
+}
+
+.front {
+    z-index: 100;
+    transition: 0.5s ease;
+}
+
+.front:hover {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.back {
+	z-index: 50;
+}
+
+#footer {
+	width: 780px;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 100px;
+	padding-bottom: 50px;
+}
+
+#footer img {
+	margin: 0px 8px;
+	float: right;
+	width: 17px;
+	height: 17px;
+}
