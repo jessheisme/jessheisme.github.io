@@ -40,6 +40,7 @@ body {
 }
 
 .thumbnail-container {
+	z-index: 100;
     width: 100%;
 	height: 100%;
 	position: relative;
@@ -49,7 +50,9 @@ body {
 }
 
 .thumbnail-container:hover {
-	top: -35px;
+	transform: translateY(-35px);
+	-webkit-transform: translateY(-35px);
+	-moz-transform: translateY(-35px);
 }
 
 .thumbnail {
@@ -59,7 +62,7 @@ body {
 }
 
 .front {
-    z-index: 100;
+    z-index: 200;
     transition: 0.5s ease;
 }
 
