@@ -84,8 +84,13 @@ body {
 }
 
 #footer img {
-	margin: 0px 8px;
+	padding: 0px 8px;
 	float: right;
 	width: 17px;
 	height: 17px;
+	opacity: 0.75;
+}
+
+#footer img:hover {
+	opacity: 1;
 }
