@@ -42,11 +42,11 @@ body {
 
 
 .first {
-	-webkit-animation: bannermove 30s linear infinite;
-	-moz-animation: bannermove 30s linear infinite;
-	-ms-animation: bannermove 30s linear infinite;
-	-o-animation: bannermove 30s linear infinite;
-	animation: bannermove 30s linear infinite;
+	-webkit-animation: bannermove 40s linear infinite;
+	-moz-animation: bannermove 40s linear infinite;
+	-ms-animation: bannermove 40s linear infinite;
+	-o-animation: bannermove 40s linear infinite;
+	animation: bannermove 40s linear infinite;
 }
 
 @keyframes "bannermove" {
@@ -102,7 +102,7 @@ body {
 	background: white;
 	border-radius: 3px;
 	transition: 0.3s ease;
-	border: 1px solid #FAFAFA;
+	border: 1px solid #F4F4F4;
 }
 
 .case-study:hover {
@@ -112,8 +112,8 @@ body {
 
 .case-study .text {
 	float: left;
-	width: 300px;
-	margin-top: 20px;
+	width: 330px;
+	margin-top: 15px;
 }
 
 .case-study .title {
@@ -124,7 +124,7 @@ body {
 }
 
 .case-study .description {
-	margin-top: 20px;
+	margin-top: 10px;
 	color: #9B9B9B;
 	letter-spacing: 1px;
 }
@@ -135,6 +135,7 @@ body {
 	height: 220px;
 	width: 330px;
 	object-fit: cover;
+	border: 1px solid #fafafa;
 }
 
 #footer {
