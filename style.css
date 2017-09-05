@@ -3,13 +3,41 @@ body {
     font-family: 'Encode Sans', sans-serif;
 }
 
-#speil {
+#spiel {
 	position: relative;
 	width: 650px;
-	margin: 50px;
+	margin-left: 50px;
 	font-size: 2.5rem;
 	color: #1C1714;
 	font-family: 'Arimo', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #fcac91;
+}
+
+
+p {
+	width: 600px;
+	margin: 0 auto;
+	font-family: 'Arimo', sans-serif;
+	line-height: 1.5;
+}
+
+.button {
+	color: #fce0d1;
+	margin: 2px 8px;
+	padding: 0px;
+	transition: 0.2s ease;
+}
+
+.button:hover {
+	margin: 0px;
+	padding: 2px 8px;
+	color: white;
+	background: #fcac91;
+	cursor: pointer;
 }
 
 .wrapper {
@@ -120,7 +148,7 @@ body {
 	margin-top: 15px;
 }
 
-.case-study .title {
+.title {
 	font-size: 1.8rem;
 	font-weight: 600;
 	letter-spacing: 1px;
@@ -169,3 +197,23 @@ body {
 	color: #9B9B9B;
 	font-size: 0.9rem;
 }
+
+#photo-of-me {
+	display: block;
+	width: 600px;
+	height: 250px;
+	object-fit: cover;
+	margin: 30px auto;
+}
+
+#back {
+	text-align: center;
+	width: 95px;
+	position: absolute;
+	color: #fcac91;
+}
+
+#back:hover {
+	color: white;
+}
+

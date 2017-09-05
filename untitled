@@ -1,0 +1,29 @@
+<!-- SITE BY JESSICA HE © 2016 // JESSHEISME.COM -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jessica He</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" href="img/favicon.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Encode+Sans:400,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		
+	</div>
+	
+	<div id="footer">
+	<a target="_blank" href="https://github.com/jessheisme"><img src="img/icons/github.png"></a>
+	<a target="_blank" href="https://twitter.com/JessHeIsMe"><img src="img/icons/twitter.png"></a>
+	<a target="_blank" href="https://www.instagram.com/jessheisme/"><img src="img/icons/instagram.png"></a>
+	<a target="_blank" href="https://www.linkedin.com/in/jessheisme/"><img src="img/icons/linkedin.png"></a>
+	<a id="email" href="mailto:jessheisme@berkeley.com">jessheisme@berkeley.edu</a>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<!-- <script src="script.js"></script> -->
+</html>
