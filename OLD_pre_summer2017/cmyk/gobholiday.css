@@ -1,0 +1,137 @@
+body {
+    background: #80C679;
+    margin: 0;
+}
+
+#canvas {
+    position: absolute;
+    z-index: 10;
+    width: calc(100% - 10px);
+    height: calc(100% - 200px);
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#weblink:hover{
+	cursor: pointer;
+}
+
+svg {
+	position: absolute;
+	margin-top: 20px;
+	width: 450px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#lights_a path{
+	fill: red;
+	animation: 2s ease lights_to_green infinite;
+}
+
+#lights_b path {
+	fill: green;
+	animation: 2s ease lights_to_red infinite;
+}
+
+#lights_c path {
+	fill: red;
+	animation: 2s ease lights_to_green infinite;
+}
+
+#lights_d path {
+	fill: green;
+	animation: 2s ease lights_to_red infinite;
+}
+
+@keyframes lights_to_green {
+	50% {
+		fill: green;
+	}
+	to {
+		fill: red;
+	}
+}
+
+@keyframes lights_to_red {
+	50% {
+		fill: red;
+	}
+	to {
+		fill: green;
+	}
+}
+
+#globe {
+    position: absolute;
+    width: 100%;
+
+}
+
+@keyframes shake{
+	from {
+		transform: translateX(-5px) rotate(-2deg);
+	}
+	50% {
+		transform: translateX(5px) rotate(2deg);
+	}
+	to {
+		transform: translateX(-5px) rotate(-2deg);
+	}
+}
+
+#globe-container {
+    position: relative;
+    width: 400px;
+    height: 550px;
+    margin: 0 auto;
+    top: 500px;
+    transform: translateY(-50%);
+}
+
+#code {
+	display: none;
+	color: white;
+	font-family: Helvetica;
+	font-weight: 800;
+	letter-spacing: 2px;
+	font-size: 36px;
+	position: absolute;
+	z-index: 10;
+	left: 50%;
+	top: 30%;
+	transform: translateX(-50%);
+}
+
+#button {
+	position: absolute;
+	background: #E81A4B;
+	padding: 15px 15px;
+	border-radius: 3px;
+	color: white;
+	font-family: Helvetica;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	left: 50%;
+	margin-top: 200px;
+	transform: translateX(-50%);
+}
+
+p {
+    font-family: Helvetica;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 50;
+    top: 800px;
+    width: 100vw;
+    padding-bottom: 50px;
+    font-weight: 300;
+}
+
+#button:hover {
+	cursor: pointer;
+}

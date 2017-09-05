@@ -1,0 +1,349 @@
+body {
+	margin: 0;
+	font-family: 'Lato';
+}
+
+div {
+	
+}
+
+h1 {
+	color: #ff085a;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 300;
+	font-size: 18px;
+	margin: 20px 0px;
+}
+
+h2 {
+	color: white;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+h4 {
+	font-size: 12px;
+	font-weight: 300;
+	color: white;
+}
+
+#mainContainer {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+#leftContainer {
+	height: 100%;
+	width: 450px;
+	float: left;
+	background: #282828;
+}
+
+.leftSubcontainer {
+	margin: 0px 25px;
+}
+
+#myProjectsContainer {
+	min-height: 350px;
+	max-height: 45%;
+	overflow-x: scroll;
+}
+
+.progress {
+	font-size: 10px;
+	color: white;
+	height: 90px;
+}
+
+.status {
+	
+}
+
+.bar {
+	width: 300px;
+	height: 5px;
+	background: white;
+	position: absolute;
+	margin-left: 25px;
+	margin-top: 5px;
+}
+
+.filled {
+	background: #82dbb7;
+	width: 200px;
+	animation: fill 1s ease forwards;
+	-webkit-animation: fill 1s ease forwards;
+}
+
+.circle {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: #82dbb7;
+	margin: 0 auto;
+	margin-bottom: 5px;
+}
+
+.stage {
+	width: 80px;
+	text-align: center;
+	float: left;
+	position: absolute;
+	z-index: 20;
+	font-weight: 300;
+	color: grey;
+}
+
+.submitted {
+	margin-left: -15px;
+}
+
+.received {
+	margin-left: 60px;
+}
+
+.evaluated {
+	margin-left: 282px;
+}
+
+.status {
+	margin-left: 360px;
+	text-align: center;
+	position: absolute;
+	margin-top: -8px;
+	color: #82dbb7;
+}
+
+.stageText {
+	color: #ff085a;
+	font-size: 12px;
+}
+
+.day {
+	font-size: 20px;
+}
+
+#myProfileContainer {
+	height: 30%;
+}
+
+#submissionContainer {
+	height: 15%;
+}
+
+#submissionContainer h4 {
+	text-align: center;
+	margin: 0;
+	letter-spacing: 1px;
+}
+
+#submissionContainer button {
+	width: 130px;
+	margin-left: calc(50% - 65px);
+	height: 40px;
+	border-radius: 5px;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 13px;
+	background: #ff085a;
+	border: none;
+	border-bottom: 2.5px solid #940534;
+	margin-top: 10px;
+}
+
+#submissionContainer button:active {
+	margin-top: 12px;
+	border-bottom: none;
+}
+
+@keyframes fill {
+	from {
+		width: 0px;
+	}
+	to {
+		width: inherit;
+	}
+}
+
+@-webkit-keyframes fill {
+	from {
+		width: 0px;
+	}
+	to {
+		width: inherit;
+	}
+}
+
+#profile-left {
+	width: 240px;
+	text-align: center;
+	float: left;
+}
+
+#profile-pic {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 3px solid green;
+}
+
+#belt-img {
+	fill: green;
+	width: 150px;
+}
+
+#profile-right {
+	padding-top: 30px;
+	color: white;
+}
+
+#user-name {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+#user-points {
+	letter-spacing: 2px;
+}
+
+#join-date {
+	margin-top: 10px;
+	font-weight: 300;
+	font-size: 12px;
+}
+
+/****** RIGHT SIDE *******/
+
+#rightContainer {
+	height: 100%;
+	margin-left: 450px;
+	padding: 20px;
+	padding-right: 0px;
+	background: #f2f2f4;
+}
+
+#blackBeltContainer {
+	height: 250px;
+	overflow: scroll;
+}
+
+#brownBeltContainer {
+	height: calc(100% - 410px);
+	width: calc(50% - 50px);
+	float: left;
+}
+
+#brownBeltContainer .card {
+	margin-right: 20px;
+	height: 100%;
+	border-radius: 0px;
+	padding: 20px;
+	overflow: scroll;
+	padding: 20px 30px;
+	color: rgba(0, 0, 0, 0.71);
+}
+
+#projectsAvailableContainer .card {
+	height: 100%;
+	border-radius: 0px;
+}
+
+#projectsAvailableContainer {
+	height: calc(100% - 410px);
+	float: left;
+	margin-left: 20px;
+	width: 50%;
+}
+
+#black-belt-title {
+	position: absolute;
+}
+
+#rightContainer h1 {
+	color: white;
+	background: #ff085a;
+	display: inline-block;
+	padding: 5px 10px;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+
+#black-card-carousel {
+	margin-top: 70px;
+	height: 170px;
+	width: 3300px;
+}
+
+.card {
+	background: white;
+	padding: 10px;
+	box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.12);
+	border-radius: 5px;
+}
+
+.black-card {
+	width: 260px;
+	height: 145px;
+	display: inline-block;
+	margin: 0px 5px;
+}
+
+.black-card:first-child {
+	margin-left: 30px;
+}
+
+.card-profile-pic {
+	height: 80px;
+	width: 80px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-top: 15px;
+	border: 2px solid black;
+}
+.card-left {
+	text-align: center;
+	width: 120px;
+	float: left;
+}
+
+.card-right {
+	font-size: 12px;
+	margin-top: 20px;
+	margin-left: 20px;
+	float: left;
+}
+
+.card-name {
+	font-size: 13px;
+	color: black;
+	font-weight: 400;
+	margin: 0;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+.card-points {
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+.brown-belt-employee {
+	width: 100%;
+	padding: 10px 0px;
+	border-bottom: 1.25px solid rgba(0, 0, 0, 0.1);
+}
+
+.brown-belt-employee:first-child {
+	padding-top: 0px;
+}
+
+.brown-belt-employee .points {
+	float: right;
+}

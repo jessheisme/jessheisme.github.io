@@ -1,0 +1,75 @@
+<!-- SITE BY JESSICA HE © 2016 // JESSHEISME.COM -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jessica He</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" href="img/favicon.png"/>
+  <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Harmattan" rel="stylesheet">
+</head>
+<body>
+<div id="background-color"></div>
+<div id="left-sidebar-container">
+	<a href="index.html"><img id="logo" src="img/logo.svg"></a>
+	<a class="social-link" href="family-map.html">Family Map</a>
+	<a class="social-link" href="security-ninjas.html">Security Ninjas</a>
+	<a class="social-link" href="sync.html">Sync</a>
+	<a class="social-link" href="quak.html">Quak</a>
+	<a class="social-link" href="comingsoon.html">Issues</a>
+	<a class="social-link" href="commingsoon.html">Yigit</a>
+</div>
+
+<div id="about-container">
+	<a href="about.html">About</a>
+</div>
+
+<div class="projectPageContents">
+	<div class="project-page-title" id="quak-title">issues</div>
+	<div class="project-page-stats">
+		<li>UI/UX, Web Design</li>
+		<li>Spring 2016</li>
+		<li>Illustrator, HTML/CSS</li>
+		<li>Freelance for Issues Berkeley Medical Journal</li>
+	</div>
+	<div class="project-page-description">
+		I was asked to redesign <a href="https://www.ocf.berkeley.edu/~issues/index.html" target="_blank">Issues Berkeley Medical Journal's</a> website.  I provided the organization with mockups of the new design and implemented these mockups in code.
+	</div>
+	<img class="project-page-img-wide" src="img/issues_home.png">
+	<div class="project-page-detail">Home page mockup (new design)</div>
+	<div class="project-page-heading">The Problem</div>
+	<p>The website was in need of a new coat of paint as it had been some time since it was updated and it <span class="highlight">no longer appealed to its target audience</span> &mdash; college students.  There were also some blatant navigation issues.</p>
+	<img class="project-page-img-wide" src="img/old-issues.jpg">
+	<div class="project-page-detail">The old home page.</div>
+	<img class="project-page-img-wide" src="img/edit-family-old.png">
+	<div class="project-page-detail">The old screens: it is unclear what items are actionable (middle screen).</div>
+	<div class="project-page-heading">First Iteration</div>
+	<p>With this first iteration,<span class="highlight"> my goal was to improve the UI so that it would enable an increase in the number of names and photos being added in the app </span>.  To achieve this, I added "edit" labels under each family member's photos and added "Add my name" hint labels in a form-like UI to<span class="highlight"> provide clear calls to action </span>.  Additionally, to prevent the user from having to go back and forth between screens, I combined all of the user's family member info onto the same screen to<span class="highlight"> reduce time spent inputting information </span>.</p>
+	<img class="project-page-img" src="img/edit-family-v1.png">
+	<div class="project-page-detail">First iteration of the Edit Family screen.</div>
+	<div class="project-page-heading">Feedback</div>
+	<p>After presenting my design to engineers, product managers, and other designers, as well as testing the app during the design team's user testing sessions (where we recruited testers from outside the company), a few concerns were brought up:<em><span class="highlight"> Are we straying too far from common, existing UI patterns?  Is it clear enough that the name fields are editable?  Will I accidentally edit a name I already inputted? </em></span></p>
+	<p>Taking in the feedback, I proposed another design aimed to address these concerns.  The biggest change to this iteration is the introduction of the "Edit" button on the top right of the screen.  This "Edit" button is aligned with commonly existing UI patterns, such as Apple's Contacts app, and creates a barrier to mutability, which safeguards against accidentally editing fields.</p>
+	<img class="project-page-img-wide" src="img/edit-family-v2.png">
+	<div class="project-page-detail">Second iteration of the Edit Family screen.</div>
+	<div class="project-page-heading">Final Thoughts</div>
+	<p>Another concern that was brought up during the critique and review process was:<span class="highlight"> <em>Why don't we just modify our existing screens instead of geting rid of what we have already and creating a new screen?</em></span>.  There were a number of reasons for why we decided to go with my proposed design.  <span class="highlight"> First off, I had spoken with one of the engineers behind the app and he assured me that my proposed design would be a quick fix </span> and shouldn't take more than two days, which was good since it was less than engineering time that our product manager had alotted.  Second, although it is more common to go into each profile individually to edit their information (as in Apple's Contact app), rather than have all the profile info in one long form as in my proposed design, I believed <span class="highlight"> it was necessary to break away from traditional UI patterns since our content was unique </span>.  It wasn't necessary for us to have a whole screen dedicated to one family member profile, since the only information we had for them were their name, photo, and associated phone number (which the user can't even edit).  Therefore, in order create a faster editing experience, it made more sense to combine all the profiles into one screen.</p>
+	<p>While in the ideation phase of my process, I also explored alternative ways our users could change their family members' photos, and I came up with the design below.  The goal of this design was to make the photo uploading process faster, since it could be an arduous process of the user has a lot of family members to upload pictures for.  This design need was not a priority at the time and was not explored further.</p>
+	<iframe src="https://marvelapp.com/hh775d?emb=1" width="452" height="901" allowTransparency="true" frameborder="0"></iframe>
+</div>
+
+<div id="grid-container">
+	<div id="nav-icon1">
+	  <span></span>
+	  <span></span>
+	  <span></span>
+	</div>
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="script.js"></script>
+</html>
