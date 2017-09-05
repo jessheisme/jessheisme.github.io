@@ -291,5 +291,20 @@ p {
 		text-align: center;
 		margin: 0 auto;
 	}
+	p {
+		width: 400px;
+	}
+	#footer {
+		width: 350px;
+	}
+	#back {
+		position: relative;
+		margin-bottom: 20px;
+		margin-left: 20px;
+	}
+	
+	#back:hover {
+		
+	}
 
 }
