@@ -50,7 +50,7 @@ p {
 	height: 250px;
 	overflow: hidden;
 	padding: 30px 10px;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 .banner {
@@ -64,13 +64,13 @@ p {
 	transition: 0.8s ease;
 }
 
-.banner img:hover {
+/*.banner img:hover {
 	transform: scale(1.3);
 	-moz-transform: scale(1.3);
 	-webkit-transform: scale(1.3);
 	-ms-transform: scale(1.3);
 	-o-transform: scale(1.3);
-}
+}*/
 
 
 .first {
